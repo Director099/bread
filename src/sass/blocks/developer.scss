@@ -1,0 +1,22 @@
+.developer {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid #444444;
+}
+
+.developer__text {
+  display: inline-block;
+  margin: 0;
+  color: #fdf9ec;
+  font-size: 12px;
+  font: 400 12px/23px "Geometria", "Arial", sans-serif;
+  line-height: 23px;
+}
+
+.developer__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

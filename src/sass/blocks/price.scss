@@ -1,0 +1,51 @@
+.price {
+  @include ul-none();
+  margin-left: 23px;
+  margin-bottom: 55px;
+  color: $white;
+}
+
+.price__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.price__invest {
+  display: inline-block;
+  max-width: 252px;
+  width: 100%;
+  text-align: right;
+  margin-right: 29px;
+  font: 700 18px/23px "Geometria", "Arial", sans-serif;
+
+  &--size {
+    font: 700 27px/30px "Geometria", "Arial", sans-serif;
+  }
+}
+
+.price__cost {
+  position: relative;
+  padding-left: 26px;
+  font: 400 24px/27px "UniNeue", "Arial", sans-serif;
+  background: url("../img/icon/price.png") no-repeat 0 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 4px;
+    width: 11px;
+    height: 18px;
+    background: url("../img/sprite/ruble.svg") no-repeat center / cover;
+  }
+
+  &--color {
+    color: #ffc500;
+    background: transparent;
+
+    &::after {
+      background: url("../img/sprite/ruble-color.svg") no-repeat center / cover;
+    }
+  }
+}

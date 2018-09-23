@@ -1,0 +1,24 @@
+.result {
+  display: flex;
+  @include ul-none();
+  color: $white;
+}
+
+.result__item {
+  flex: 1;
+  padding: 38px 33px 25px 37px;
+
+  &--block-1 {
+    border-radius: 10px 0 0 10px;
+    background: rgba(#291c11, 0.55%);
+  }
+
+  &--block-2 {
+    background: rgba(#453432, 0.56%);
+  }
+
+  &--block-3 {
+    border-radius: 0 10px 10px 0;
+    background: rgba(#c79216, 0.56%);
+  }
+}

@@ -1,0 +1,41 @@
+.number-entre {
+  position: relative;
+  max-width: 388px;
+  height: 367px;
+  margin-left: auto;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 100%;
+    height: 53px;
+    background: url("../img/shadow.png") no-repeat center / contain;
+  }
+}
+
+.number-entre__content {
+  position: relative;
+  height: 100%;
+  border-radius: $radius;
+  background: url("../img/block-dot.png") no-repeat top / cover;
+  overflow: hidden;
+}
+
+.number-entre__text {
+  padding-top: 121px;
+  padding-left: 29px;
+  padding-right: 81px;
+  color: $text-color;
+  font: 300 18px/29px "Geometria", "Arial", sans-serif;
+}
+
+.number-entre__number {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  color: #c79216;
+  font: 700 200px/200px "UniNeue", "Arial", sans-serif;
+}

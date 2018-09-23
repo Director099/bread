@@ -1,0 +1,37 @@
+.equipment {
+  max-width: 270px;
+  min-height: 244px;
+  width: 100%;
+  padding: 35px 28px 24px 43px;
+  color: $white;
+  background: rgba($black, 0.6%);
+  border-radius: $radius;
+
+  &--icon {
+    background: transparent;
+    padding: 0;
+  }
+}
+
+.equipment__title {
+  padding-top: 75px;
+  font: 700 18px/32px "Geometria", "Arial", sans-serif;
+
+  &--icon-1 {
+    background: url("../img/icon/iso.png") no-repeat top left;
+  }
+
+  &--icon-2 {
+    background: url("../img/icon/waranty.png") no-repeat top left;
+  }
+
+  &--icon-3 {
+    background: url("../img/icon/certificate.png") no-repeat top left;
+  }
+}
+
+.equipment p {
+  color: #ede0d2;
+  font: 400 16px/27px "Geometria", "Arial", sans-serif;
+  margin: 0;
+}

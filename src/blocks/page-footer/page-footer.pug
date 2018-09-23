@@ -1,0 +1,36 @@
+mixin page-footer()
+  footer.page-footer
+    .container
+      a.page-footer__logo
+        img(src="img/logo.png" alt="«Хлеб из тандыра»")
+      .row.page-footer__row
+        .col-md-3
+          p.address Россиия #[br] Республика Башкортостан, Уфа, улица Менделеева, 130
+        .col-md-3
+          a.mail.page-footer__mail(href="mailto:info@mytandir.ru") info@mytandir.ru
+          a.phone(href="tel:88007755807") 8 800 77 55 807
+        .col-md-3
+          .social
+            p.social__text Мы в социальных сетях:
+            .social__list
+              a.social__item(href="#" aria-label="vk")
+                svg(width="20" height="20")
+                  use(xlink:href="img/symbols.svg#vk")
+              a.social__item(href="#" aria-label="facebook")
+                svg(width="20" height="20")
+                  use(xlink:href="img/symbols.svg#facebook")
+              a.social__item(href="#" aria-label="twitter")
+                svg(width="20" height="20")
+                  use(xlink:href="img/symbols.svg#twitter")
+              a.social__item(href="#" aria-label="youtube")
+                svg(width="20" height="20")
+                  use(xlink:href="img/symbols.svg#youtube")
+              a.social__item(href="#" aria-label="instagram")
+                svg(width="20" height="20")
+                use(xlink:href="img/symbols.svg#im")
+        .col-md-3
+          +btn("btn--width")
+      .developer
+        p.developer__text All Rights Reserved ©
+        a.developer__logo(href="https://pplans.ru", target="_blank")
+          img(src="img/sprite/pplan.svg", alt="Веб студия «People Plans» — Разработка сайтов и лендингов")

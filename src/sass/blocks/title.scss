@@ -1,0 +1,36 @@
+.title {
+  position: relative;
+  max-width: 920px;
+  font: 900 42px/60px "Geometria", "Arial", sans-serif;
+  color: #24110c;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -102px;
+    top: 33px;
+    width: 52px;
+    height: 2px;
+    background: $color-warning;
+  }
+
+  &--size {
+    font-size: 27px;
+  }
+
+  &--color {
+    color: $white;
+  }
+
+  &--center {
+    text-align: center;
+    margin: 0 auto;
+
+    &::after {
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
+}

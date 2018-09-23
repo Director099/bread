@@ -1,0 +1,38 @@
+.production {
+  max-width: 458px;
+}
+
+.production__text {
+  color: #ede0d2;
+  font: 400 24px/42px "Geometria", "Arial", sans-serif;
+  margin-bottom: 40px;
+}
+
+.production__list {
+  @include ul-none();
+  margin-bottom: 36px;
+}
+
+.production__item {
+  position: relative;
+  padding-left: 80px;
+  color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 66px;
+    height: 66px;
+    background: url("../img/icon/circle.png") no-repeat center;
+  }
+}
+
+.production__item strong {
+  font: 700 18px/32px "Geometria", "Arial", sans-serif;
+}
+
+.production__item p {
+  font: 300 14px/25px "Geometria", "Arial", sans-serif;
+}

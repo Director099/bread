@@ -1,0 +1,42 @@
+.pack-franchise {
+  margin-top: -75px;
+  margin-bottom: -75px;
+  padding: 93px 52px 110px 53px;
+  background: rgba($black, 0.5%);
+  color: $white;
+}
+
+.pack-franchise__title {
+  padding-left: 25px;
+  font: 700 27px/23px "Geometria", "Arial", sans-serif;
+  margin-bottom: 36px;
+}
+
+.pack-franchise__list {
+  @include ul-none();
+}
+
+.pack-franchise__item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font: 400 14px/23px "Geometria", "Arial", sans-serif;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $color-warning;
+  }
+}
+
+.pack-franchise__item small {
+  display: block;
+  font-size: 11px;
+  line-height: 18px;
+}

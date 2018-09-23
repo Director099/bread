@@ -1,0 +1,33 @@
+.video-img {
+  display: flex;
+  max-width: 570px;
+  height: 468px;
+  border-radius: 15px;
+  background: url("../img/img-video.jpg") no-repeat center / cover;
+  cursor: pointer;
+}
+
+.video-img__wrap {
+  text-align: center;
+  margin: auto;
+}
+
+.video-img__play {
+  display: block;
+  margin: 0 auto 23px;
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  border: none;
+  background: $color-warning url("../img/sprite/play-button.svg") no-repeat center / 16px 20px;
+}
+
+.video-img__text {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: $white;
+  padding-bottom: 3px;
+  margin: 0;
+  border-bottom: 2px solid $white;
+}

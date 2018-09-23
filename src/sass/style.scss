@@ -1,0 +1,46 @@
+// Style plagin
+
+@import "variables";
+
+@import "node_modules/normalize.css/normalize";
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "node_modules/owl.carousel/dist/assets/owl.carousel";
+@import "node_modules/owl.carousel/dist/assets/owl.theme.default";
+@import "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
+
+// My style
+
+@import "fonts";
+@import "functions";
+@import "global";
+
+@import "blocks/fullpage";
+@import "blocks/page-header";
+@import "blocks/page-footer";
+@import "blocks/title";
+@import "blocks/video-img";
+@import "blocks/bg-content";
+@import "blocks/dignity";
+@import "blocks/income";
+@import "blocks/tagline";
+@import "blocks/btn";
+@import "blocks/result";
+@import "blocks/number-entre";
+@import "blocks/block-tandyr";
+@import "blocks/block-equipment";
+@import "blocks/equipment";
+@import "blocks/equipment-grid";
+@import "blocks/production";
+@import "blocks/pack-franchise";
+@import "blocks/opening";
+@import "blocks/price";
+@import "blocks/block-info";
+@import "blocks/group-info";
+@import "blocks/document";
+@import "blocks/address";
+@import "blocks/phone";
+@import "blocks/mail";
+@import "blocks/social";
+@import "blocks/developer";

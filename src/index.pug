@@ -1,0 +1,159 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+block header
+  .fullpage
+    .container
+      +page-header()
+
+block content
+  main
+    .bg-content
+      .container
+        .row
+          section.col-md-6
+            h2.title «Хлеб из тандыра»
+            p.tagline Первая франшиза тандырной пекарни в России и мире
+            a.video-img(data-fancybox href="https://www.youtube.com/watch?v=__Tk4WIvh2Y")
+              .video-img__wrap
+                button.video-img__play(aria-label="Просмотр видео")
+                p.video-img__text Просмотр видео о франшизе
+          .col-md-6
+            ul.dignity
+              li.dignity__item
+                h3.dignity__title Маржинальность от 300%
+                p Понятный и надежный бизнес, не подверженный кризису и политической обстановке, с высокой маржинальностью от 300% и низкими инвестициями до 1,2 млн. руб.
+              li.dignity__item
+                h3.dignity__title Производство с 1987 года
+                p С 1987 года мы производим тандырные печеи, имеем Патент на «Полезную модель» и несем гарантийные обязательства. В 2014 году мы запускаем франшизу пекарни «Хлеб из тандыра» и за три года предпринимателями были открыты пекарни в России, Польше, Чехии, Казахстане.
+              li.dignity__item
+                h3.dignity__title Действующие члены РАФ
+                p Являемся действующими члены Российской ассоциации франчайзинга с 2015 года. В 2016 году опередили IL Patio и Шоколадницу в рейтинге франшиз GOLDEN BRAND, в 2017 году номинированы в трех номинациях: #[strong «Франчайзер года», «Золотая франшиза», «Выбор народа»]
+        .income.row
+          .col-md-6
+            .income__month
+              p Два месяца средний срок выхода на точку безубыточности по данным франчайзи
+          .col-md-6
+            .income__price.income__price--color-1
+              p Средний доход одной пекарни  уже через 7 недель после запуска
+            .income__price.income__price--color-2
+              strong.income__numb 495 000 #[sub руб]
+              p Стоимость пакета франшизы  включая тандырную печь
+        h2.title.title--center Фотогалерея франшизы
+        .owl-carousel.owl-theme
+          .item
+          //- слайдер
+    .bg-content.block-tandyr
+      section.container
+        h2.title.title--color В основе франшизы личный 20-ти летний  опыт в бизнесе
+        ul.result.block-tandyr__result
+          li.result__item.result__item--block-1
+            strong 1 000 000 рублей
+            p Ежемесячно приносит наша флагманская  пекарня на дальнем восток
+          li.result__item.result__item--block-2
+            strong 1 000 000 рублей
+            p Действующих по всему миру,  32 открываются в ближайшее время
+          li.result__item.result__item--block-3
+            p Лауреаты профессиональной премии Golden Brand, действующие члены Российской Ассоциации Франчайзинга, работаем по стандартам качества ISO.
+        .number-entre.block-tandyr__entre
+          .number-entre__content
+            p.number-entre__text Предпринимателя из России,  Европы и СНГ присоединились к франшизе
+            span.number-entre__number 96
+        +btn()
+    .bg-content
+      .container
+        h2.title Более 80 видов выпечки
+        p без консервантов, усилителей вкуса и разрыхлителей
+        .owl-carousel.owl-theme
+          .item
+    .bg-content.block-equipment
+      .container
+        h2.title.title--color.block-equipment__title В пакете франшизы «хлеб из тандыра» запатентованное оборудование собственного производства
+        .row
+          .col-md-7
+            .equipment-grid
+              +equipment(
+                "equipment__title--icon-1",
+                "Стандартизация",
+                "Работаем по стандартам ISO подтвержденным сертификатом качества",
+                "equipment-grid__ident"
+              )
+
+              .equipment.equipment--icon
+                img(src="img/icon/tandyr.png" alt="Иконка тандыра")
+
+              +equipment(
+                "equipment__title--icon-2",
+                "Полезная модель",
+                "Обладаем патентом на полезную модель — «тандырная печь»",
+                "equipment-grid__ident"
+              )
+              +equipment(
+                "equipment__title--icon-3",
+                "Сертификация",
+                "Имеем все  сертификаты ЕАС на оборудование для СНГ и Европы",
+                "equipment-grid__ident"
+              )
+          .col-md-5
+            .production.block-equipment__production
+              p.production__text Производим ключевое оборудование, которое изготавливается потомственными гончарами, владеющими секретами производства печей и тандыров.
+              ul.production__list
+                li.production__item
+                  strong Электрический глиняный тандыр
+                  p габариты: 120х100 см
+                li.production__item
+                  strong Электрический глиняный тандыр
+                  p габариты: 120х100 см
+              +btn()
+    .bg-content
+      .container
+        h2.title.title--center Калькулятор экономических показателей
+    .bg-content.opening
+      .container
+        .row
+          section.col-md-6
+            h2.title.title--color.opening__title Стоимость открытия полноценной пекарни
+            ul.price
+              li.price__item
+                strong.price__invest.price__invest--size Стоимость пакета:
+                span.price__cost.price__cost--color 495 000
+              li.price__item
+                strong.price__invest * Расходы на открытие:
+                span.price__cost 700 000
+              li.price__item
+                strong.price__invest ** Общие инвестиции:
+                span.price__cost 1 200 000
+            .block-info.opening__block-info
+              em.block-info__ident * Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи
+              em ** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.
+            .group-info
+              +btn(
+                "btn--width"
+              )
+              .document
+                p.document__text Смотреть #[a(href="#") Лайт-формат]
+                small (для помещений без посадочных мест)
+
+          .col-md-6
+            section.pack-franchise
+              h3.pack-franchise__title Пакет франшизы
+              ul.pack-franchise__list
+                li.pack-franchise__item Электрический глиняный тандыр, габариты: 120х100 см
+                li.pack-franchise__item Чекиш, мягкий пресс, крюк, лопатка
+                li.pack-franchise__item Доступ к корпоративной LMS-системе
+                li.pack-franchise__item Доступ к общему чату всех франчайзи
+                li.pack-franchise__item Настроенная система Poster
+                li.pack-franchise__item Технологические карты
+                li.pack-franchise__item Описание технологии приготовления пррдукции
+                li.pack-franchise__item Стандарты технологического процесса (бейкер бук),
+                li.pack-franchise__item Система ХАССП (HACCP)
+                li.pack-franchise__item Маркетинг и реклама:
+                  small бренд-бук, гайд-лайн, план-график маркетинговой активности  на год, smm-гид)
+                li.pack-franchise__item Помощь в подборе помещения
+                li.pack-franchise__item Персонал - подбор, обучение, мотивация, документация
+                  small (должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )
+                li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
+
+block footer
+  +page-footer()

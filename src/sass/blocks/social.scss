@@ -1,0 +1,18 @@
+.social {
+
+}
+
+.social__text {
+  color: #fdf9ec;
+  margin-bottom: 20px;
+  font: 400 14px/23px "Geometria", "Arial", sans-serif;
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 16px;
+
+  &::last-child {
+    margin-right: 0;
+  }
+}

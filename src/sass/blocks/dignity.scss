@@ -1,0 +1,26 @@
+.dignity {
+  @include ul-none();
+  margin-top: 40px;
+}
+
+.dignity__item {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $color-warning;
+  }
+}
+
+.dignity__title {
+  font: 700 21px/26px "Geomentria", "Arial", sans-serif;
+  color: $text-color;
+}

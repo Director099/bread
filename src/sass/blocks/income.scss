@@ -1,0 +1,58 @@
+.income {
+
+}
+
+.income__month {
+  max-width: 570px;
+  height: 610px;
+  background: url("../img/bg-adv-1.jpg") no-repeat center / cover;
+  border-radius: $radius;
+}
+
+.income__month p {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: 45px;
+  margin-bottom: 0;
+  padding-top: 238px;
+  font: 400 24px/42px "Geometria", "Arial", sans-serif;
+  color: $white;
+}
+
+.income__price {
+  position: relative;
+  max-width: 570px;
+  height: 290px;
+  border-radius: $radius;
+
+  &--color-1 {
+    background: url("../img/bg-adv-2.jpg") no-repeat center / cover;
+    margin-bottom: 30px;
+  }
+
+  &--color-2 {
+    background: url("../img/bg-adv-3.jpg") no-repeat center / cover;
+  }
+}
+
+.income__price p {
+  position: absolute;
+  top: 190px;
+  left: 60px;
+  max-width: 310px;
+  font: 400 18px/29px "Geometria", "Arial", sans-serif;
+  margin: 0;
+  color: $white;
+}
+
+.income__numb {
+  display: inline-block;
+  padding-top: 108px;
+  padding-left: 60px;
+  color: $white;
+  font: 400 80px/80px "UniNeue", "Arial", sans-serif;
+}
+
+.income__numb sub {
+  font: 400 14px/32px "Geometria", "Arial", sans-serif;
+}
