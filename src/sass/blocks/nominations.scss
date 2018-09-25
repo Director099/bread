@@ -1,0 +1,29 @@
+.nominations {
+  max-width: 586px;
+}
+
+.nominations__text {
+  margin-bottom: 35px;
+  color: $white;
+  font: 400 21px/32px "Geometria", "Arial", sans-serif;
+}
+
+.nominations__text span {
+  display: block;
+  color: #e5d8cf;
+  font: 300 14px/23px "Geometria", "Arial", sans-serif;
+}
+
+.nominations__list {
+  display: flex;
+  justify-content: space-between;
+  @include ul-none();
+  color: $white;
+}
+
+.nominations__item {
+  max-width: 158px;
+  padding-left: 55px;
+  font: 700 16px/25px "Geometria", "Arial", sans-serif;
+  background: url("../img/icon/wreath.png") no-repeat 0 50%;
+}

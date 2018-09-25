@@ -10,6 +10,15 @@ if ($('input[type="tel"]')) {
   $('input[type="tel"]').mask('0 (000) 000 - 00 - 00');
 }
 
+$('.fullpage__slider').owlCarousel({
+    loop:true,
+    nav:false,
+    dots: false,
+    animateOut: 'fadeOut',
+    autoplay: true,
+    items: 1
+})
+
 // Плавный скол с навигации
 
 /* $(".scrollto > a").click(function () {

@@ -4,9 +4,24 @@ block meta
   title Главная
 block header
   .fullpage
-    .container
-      +page-header()
-
+    .container.fullpage__container
+      .fullpage__content
+        +page-header()
+        section.main-block.fullpage__main-block
+          h1.title.title--color Франшиза #[span «Хлеб из тандыра»]
+          p.main-block__text Открой экологически чистый бизнес по стандартам ISO. Тандырная пекарня с полезной продукцией без добавления красителей, консервантов и усилителей вкуса.
+        .nominations
+          p.nominations__text Номинированы в трех номинациях в 2017 году #[span в рейтинге GOLDEN BRAND]
+          ul.nominations__list
+            li.nominations__item Выбор #[br] народа
+            li.nominations__item Золотая франшиза
+            li.nominations__item Франчайзер года
+    .fullpage__slider.owl-carousel.owl-theme
+      .item(style="background-image: url('../img/slider-head/bg-header.jpg')")
+      .item(style="background-image: url('../img/slider-head/bg-peack.jpg')")
+      .item(style="background-image: url('../img/slider-head/bg-piy.jpg')")
+      .item(style="background-image: url('../img/slider-head/bg-vitrina.jpg')")
+      .item(style="background-image: url('../img/slider-head/bg-vitrina-2.jpg')")
 block content
   main
     .bg-content

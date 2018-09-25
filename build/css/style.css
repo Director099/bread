@@ -5676,10 +5676,36 @@ main {
   overflow: hidden;
   display: block; }
 
-.fullpage {
-  background: url("../img/bg-header.jpg") no-repeat center/cover;
+.fullpage__page-header {
+  margin-bottom: 145px; }
+
+.fullpage__main-block {
+  margin-bottom: 83px; }
+
+.fullpage .item {
+  background-repeat: no-repeat center / cover;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   min-height: 796px; }
+
+.fullpage__container {
+  position: relative; }
+
+.fullpage__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2; }
+
+.page-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px; }
 
 .page-footer {
   padding-top: 63px;
@@ -5723,6 +5749,9 @@ main {
       left: 50%;
       top: 0;
       transform: translateX(-50%); }
+
+.title span {
+  display: inline-block; }
 
 .video-img {
   display: flex;
@@ -6119,7 +6148,7 @@ main {
   background: url("../img/sprite/locate.svg") no-repeat 0 5px/20px 17px; }
 
 .phone {
-  display: inline-block;
+  display: block;
   color: #fdf9ec;
   font: 700 18px/32px "Geometria", "Arial", sans-serif;
   padding-left: 35px;
@@ -6162,6 +6191,51 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.callback {
+  text-align: right; }
+
+.callback__btn {
+  display: inline-block;
+  font: 400 10px/23px "Geometria", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 1px dashed #ac987e; }
+
+.main-block {
+  max-width: 470px;
+  color: white; }
+
+.main-block__text {
+  color: #e5d8cf;
+  font: 300 16px/29px "Geometria", "Arial", sans-serif; }
+
+.nominations {
+  max-width: 586px; }
+
+.nominations__text {
+  margin-bottom: 35px;
+  color: white;
+  font: 400 21px/32px "Geometria", "Arial", sans-serif; }
+
+.nominations__text span {
+  display: block;
+  color: #e5d8cf;
+  font: 300 14px/23px "Geometria", "Arial", sans-serif; }
+
+.nominations__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: white; }
+
+.nominations__item {
+  max-width: 158px;
+  padding-left: 55px;
+  font: 700 16px/25px "Geometria", "Arial", sans-serif;
+  background: url("../img/icon/wreath.png") no-repeat 0 50%; }
 
 @media (min-width: 576px) {
   .container {

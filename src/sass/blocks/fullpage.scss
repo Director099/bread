@@ -1,5 +1,32 @@
 .fullpage {
-  background: url("../img/bg-header.jpg") no-repeat center / cover;
+
+}
+
+.fullpage__page-header {
+  margin-bottom: 145px;
+}
+
+.fullpage__main-block {
+  margin-bottom: 83px;
+}
+
+.fullpage .item {
+  background-repeat: no-repeat center / cover;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   min-height: 796px;
+}
+
+.fullpage__container {
+  position: relative;
+}
+
+.fullpage__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
 }
