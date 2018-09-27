@@ -34,3 +34,15 @@ mixin page-footer()
         p.developer__text All Rights Reserved ©
         a.developer__logo(href="https://pplans.ru", target="_blank")
           img(src="img/sprite/pplan.svg", alt="Веб студия «People Plans» — Разработка сайтов и лендингов")
+  .modal.fade(id="exampleModal" tabindex="-1" role="dialog")
+    .modal-dialog
+      .modal-content
+        h4 Оставьте заявку на получение презентации о франшизе,и получите подробную финансовую модель открытия пекарни
+        button(type="button" data-dismiss="modal" aria-label="Close")
+        form
+          input(type="tel", placeholder="+1 234 567 890")
+          input(type="email", placeholder="Your e-mail")
+          button.btn Оправить заявку
+          .form-checkbox
+            input(type="checkbox")
+            label Заполняя форму, Вы соглашаетесь с политикой конфиденциальности

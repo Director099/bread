@@ -28,6 +28,24 @@ $('.communion__slider').owlCarousel({
     items: 2
 })
 
+$('.gallery').owlCarousel({
+    loop:true,
+    nav:true,
+    dots: false,
+    margin: 20,
+    animateOut: 'fadeOut',
+    items: 3
+})
+
+$('.catalog__slider').owlCarousel({
+    loop:true,
+    nav:false,
+    dots: false,
+    autoWidth: true,
+    center: true,
+    items: 1
+})
+
 $('input[type="range"]').rangeslider({
     polyfill : false,
     onInit : function() {
