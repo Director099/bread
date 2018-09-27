@@ -9,6 +9,7 @@
 @import "node_modules/owl.carousel/dist/assets/owl.carousel";
 @import "node_modules/owl.carousel/dist/assets/owl.theme.default";
 @import "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
+@import "node_modules/rangeslider.js/dist/rangeslider";
 
 // My style
 
@@ -47,4 +48,8 @@
 @import "blocks/callback";
 @import "blocks/main-block";
 @import "blocks/nominations";
-
+@import "blocks/step";
+@import "blocks/communion";
+@import "blocks/number-step";
+@import "blocks/calculator";
+@import "blocks/range";

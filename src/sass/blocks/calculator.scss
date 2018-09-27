@@ -1,0 +1,135 @@
+.calculator {
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 34px 29px rgba(0, 0, 0, 0.06);
+  background: $white;
+  margin-top: 85px;
+}
+
+.calculator__choice {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.calculator__package {
+  position: relative;
+  max-width: 710px;
+  width: 100%;
+  padding: 70px 82px 75px 92px;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    box-shadow: -2px 0 34px rgba(72, 72, 72, 0.1);
+  }
+}
+
+.calculator__title {
+  color: #24110c;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.calculator__nav {
+  max-width: 320px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.calculator__nav li {
+  display: flex;
+  flex-shrink: 0;
+  width: 50%;
+  text-align: center;
+
+  &:first-child a {
+    border-radius: 26px 0 0 26px;
+  }
+
+  &:last-child a {
+    border-radius: 0 26px 26px 0;
+  }
+}
+
+.calculator__nav a {
+  position: relative;
+  width: 100%;
+  box-shadow: inset 1px 2px 7px rgba(0, 0, 0, 0.15);
+  padding: 13px 0;
+  color: #bcbcbc;
+  font-size: 16px;
+  font-weight: 700;
+
+  &.active {
+    background-color: #ffc815;
+    color: $black;
+  }
+}
+
+.calculator__nav a span {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 100%;
+  font-family: "UniNeue", "Arial", sans-serif;
+  font-size: 12px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.calculator__total {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+.calculator__total strong {
+  display: block;
+  margin-top: 10px;
+  color: #24110c;
+  font-family: "UniNeue", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.calculator__result {
+  position: relative;
+  padding: 101px 74px 80px 55px;
+}
+
+.calculator__profit strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #24110c;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.calculator__profit span {
+  display: inline-block;
+  margin-bottom: 26px;
+  color: #ffc815;
+  font-family: "UniNeue", "Arial", sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.calculator__profit small {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+  color: #c1c1c1;
+  margin-bottom: 55px;
+}

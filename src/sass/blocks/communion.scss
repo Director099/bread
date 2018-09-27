@@ -1,0 +1,70 @@
+.communion {
+
+}
+
+.communion__content {
+  margin-top: 60px;
+}
+
+.communion__title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 34px;
+  color: #333333;
+}
+
+.communion__text {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.communion__number {
+  margin-bottom: 37px;
+}
+
+.communion__slider {
+  padding: 0 60px;
+}
+
+.communion__slider .owl-nav {
+  margin: 0;
+}
+
+.communion__slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #c79216 !important;
+  color: $white !important;
+  font-size: 23px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  span {
+    font-size: 34px;
+    line-height: 20px;
+  }
+}
+
+.communion__slider .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #c79216 !important;
+  color: $white !important;
+  font-size: 23px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  span {
+    font-size: 34px;
+    line-height: 20px;
+  }
+}

@@ -99,6 +99,7 @@ gulp.task('js', function() {
     'node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',
     'node_modules/scrollup/dist/jquery.scrollUp.min.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+    'node_modules/rangeslider.js/dist/rangeslider.js',
     dirs.source + '/js/custom.js'
     ])
   .pipe(plumber())

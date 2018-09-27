@@ -1,0 +1,50 @@
+.range {
+  padding-top: 45px;
+  padding-bottom: 34px;
+  // border-bottom: 1px solid #fafafa;
+  border-top: 1px solid #fafafa;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.range .rangeslider {
+  height: 7px;
+  border-radius: 3px;
+  background: #e5e5e5;
+  box-shadow: none;
+}
+
+.rangeslider__fill {
+  background: #f8f5cf;
+  box-shadow: none;
+}
+
+.rangeslider__handle {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.11);
+  background: #ffc815;
+  border: none;
+
+  &::after {
+    display: none;
+  }
+}
+
+.range__meanings {
+  display: flex;
+  justify-content: space-between;
+  margin: 21px 0 0;
+}
+
+.range__meanings span {
+  font-size: 10px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.range__limit {
+  margin-bottom: 33px;
+}
