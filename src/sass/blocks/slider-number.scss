@@ -1,0 +1,35 @@
+.slider-number {
+  display: none;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+    @include ul-none();
+    position: absolute;
+    right: 0;
+    top: 242px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    min-width: 21px;
+    z-index: 1;
+    color: $white;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+.slider-number li {
+  margin-bottom: 50px;
+  min-height: 22px;
+  cursor: pointer;
+  transition: $time;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.active {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

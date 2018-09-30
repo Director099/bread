@@ -4,4 +4,16 @@
   font: 700 18px/32px "Geometria", "Arial", sans-serif;
   padding-left: 35px;
   background: url("../img/sprite/mai.svg") no-repeat 0 7px / 20px;
+
+  &--size {
+    font: 400 10px/28px "Geometria", "Arial", sans-serif;
+    background-size: 13px;
+    padding-left: 21px;
+
+    @media (min-width: $screen-md) {
+      font: 400 18px/32px "Geometria", "Arial", sans-serif;
+      background-size: 20px;
+      padding-left: 35px;
+    }
+  }
 }

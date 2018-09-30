@@ -1,0 +1,31 @@
+.next-slider {
+  display: none;
+
+  @media(min-width: $screen-xl) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.next-slider__btn {
+  position: relative;
+  width: 220px;
+  padding: 19px 70px 19px 10px;
+  color: $white;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  background: #c79216 url("../img/icon/arrow-right.png") no-repeat 86% 50%;
+}
+
+.next-slider__bg {
+  width: 285px;
+  height: 155px;
+  background-size: cover;
+  background-position: center;
+}

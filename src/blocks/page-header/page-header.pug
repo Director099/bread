@@ -1,8 +1,35 @@
 mixin page-header()
   header.page-header.fullpage__page-header
-    a.mail(href="mailto:info@mytandir.ru") info@mytandir.ru
+    a.mail.mail--size(href="mailto:info@mytandir.ru") info@mytandir.ru
     a.logo.page-header__logo
       img(src="img/logo.png", alt="«Хлеб из тандыра»")
     .callback
-      a.phone(href="tel:88007755807") 8 800 77 55 807
+      a.phone.phone--size(href="tel:88007755807") 8 800 77 55 807
       a.callback__btn(href="#") заказать звонок
+      ul.slider-number
+    button.navigation__btn(type="button", aria-label="Открытие меню")
+    nav.navigation
+      ul.navigation__list
+        li.navigation__item
+          a.navigation__link.navigation__link--active(href="#") Главная
+        li.navigation__item
+          a.navigation__link(href="#") О франшизе
+        li.navigation__item
+          a.navigation__link(href="#") Фотогалерея
+        li.navigation__item
+          a.navigation__link(href="#") Преимущества
+        li.navigation__item
+          a.navigation__link(href="#") Продукция
+        li.navigation__item
+          a.navigation__link(href="#") Оборудование
+        li.navigation__item
+          a.navigation__link(href="#") Калькулятор
+        li.navigation__item
+          a.navigation__link(href="#") Доказательства
+      form.form-callback
+        h3.title.title--size.title--color.form-callback__title Специалист свяжется с вамив течении 30 минут
+        input(type="tel" placeholder="+1 234 567 890")
+        button.form-callback_btn Заказать звонок
+        .form-checkbox
+          input(type="checkbox")
+          label Заполняя форму, Вы соглашаетесь с политикой конфиденциальности

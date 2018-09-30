@@ -22,11 +22,37 @@
   </head>
   <body>
     <div class="fullpage">
+      <div class="container container--max">
+        <header class="page-header fullpage__page-header"><a class="mail mail--size" href="mailto:info@mytandir.ru">info@mytandir.ru</a><a class="logo page-header__logo"><img src="img/logo.png" alt="«Хлеб из тандыра»"/></a>
+          <div class="callback"><a class="phone phone--size" href="tel:88007755807">8 800 77 55 807</a><a class="callback__btn" href="#">заказать звонок</a>
+            <ul class="slider-number"></ul>
+          </div>
+          <button class="navigation__btn" type="button" aria-label="Открытие меню"></button>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Главная</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">О франшизе</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Фотогалерея</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Преимущества</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Продукция</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Оборудование</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Калькулятор</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Доказательства</a></li>
+            </ul>
+            <form class="form-callback">
+              <h3 class="title title--size title--color form-callback__title">Специалист свяжется с вамив течении 30 минут</h3>
+              <input type="tel" placeholder="+1 234 567 890"/>
+              <button class="form-callback_btn">Заказать звонок</button>
+              <div class="form-checkbox">
+                <input type="checkbox"/>
+                <label>Заполняя форму, Вы соглашаетесь с политикой конфиденциальности</label>
+              </div>
+            </form>
+          </nav>
+        </header>
+      </div>
       <div class="container fullpage__container">
         <div class="fullpage__content">
-          <header class="page-header fullpage__page-header"><a class="mail" href="mailto:info@mytandir.ru">info@mytandir.ru</a><a class="logo page-header__logo"><img src="img/logo.png" alt="«Хлеб из тандыра»"/></a>
-            <div class="callback"><a class="phone" href="tel:88007755807">8 800 77 55 807</a><a class="callback__btn" href="#">заказать звонок</a></div>
-          </header>
           <section class="main-block fullpage__main-block">
             <h1 class="title title--color">Франшиза <span>«Хлеб из тандыра»</span></h1>
             <p class="main-block__text">Открой экологически чистый бизнес по стандартам ISO. Тандырная пекарня с полезной продукцией без добавления красителей, консервантов и усилителей вкуса.</p>
@@ -39,14 +65,18 @@
               <li class="nominations__item">Франчайзер года</li>
             </ul>
           </div>
+          <div class="next-slider">
+            <button class="next-slider__btn">Изготовление</button>
+            <div class="next-slider__bg" style="background-image: url('../img/slider-head/bg-header.jpg')"></div>
+          </div>
         </div>
       </div>
       <div class="fullpage__slider owl-carousel owl-theme">
-        <div class="item" style="background-image: url('../img/slider-head/bg-header.jpg')"></div>
-        <div class="item" style="background-image: url('../img/slider-head/bg-peack.jpg')"></div>
-        <div class="item" style="background-image: url('../img/slider-head/bg-piy.jpg')"></div>
-        <div class="item" style="background-image: url('../img/slider-head/bg-vitrina.jpg')"></div>
-        <div class="item" style="background-image: url('../img/slider-head/bg-vitrina-2.jpg')"></div>
+        <div class="item" style="background-image: url('../img/slider-head/bg-peack.jpg')" data-text="Изготовление"></div>
+        <div class="item" style="background-image: url('../img/slider-head/bg-vitrina.jpg')" data-text="Лайт-формат"></div>
+        <div class="item" style="background-image: url('../img/slider-head/bg-piy.jpg')" data-text="Выпечка"></div>
+        <div class="item" style="background-image: url('../img/slider-head/bg-header.jpg')" data-text="Интерьер"></div>
+        <div class="item" style="background-image: url('../img/slider-head/bg-cooking.jpg')" data-text="Процесс"></div>
       </div>
     </div>
     <main>

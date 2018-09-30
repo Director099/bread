@@ -1,11 +1,16 @@
 .callback {
+  position: relative;
   text-align: right;
 }
 
 .callback__btn {
-  display: inline-block;
-  font: 400 10px/23px "Geometria", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: $white;
-  border-bottom: 1px dashed #ac987e;
+  display: none;
+
+  @media(min-width: $screen-md) {
+    display: inline-block;
+    font: 400 10px/23px "Geometria", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: $white;
+    border-bottom: 1px dashed #ac987e;
+  }
 }
