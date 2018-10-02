@@ -1,4 +1,16 @@
 .tagline {
-  font: 400 21px/32px "Geometria", "Arial", sans-serif;
+  font: 400 10px/21px "Geometria", "Arial", sans-serif;
   color: #513e37;
+  text-align: center;
+
+  // «Хлеб из тандыра» отступ
+  margin-top: -12px;
+  margin-bottom: 28px;
+
+  @media (min-width: $screen-md) {
+    font: 400 21px/32px "Geometria", "Arial", sans-serif;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }

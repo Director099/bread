@@ -1,0 +1,11 @@
+.bg-calculator {
+  padding-top: 50px;
+  padding-bottom: 59px;
+}
+
+.bg-calculator__title {
+
+  &::after {
+    top: -15px;
+  }
+}

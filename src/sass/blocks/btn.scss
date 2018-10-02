@@ -1,18 +1,30 @@
 .btn {
   max-width: 370px;
-  padding: 19px 40px 20px 110px;
+  padding: 16px 40px 15px 89px;
   border-radius: 50px;
-  font: 700 18px/25px "Geometria", "Arial", sans-serif;
+  font: 700 14px/19px "Geometria", "Arial", sans-serif;
   text-align: left;
-  box-shadow: 0 8px 35px 5px rgba(#f1c700, 0.5%), 0px 7px 0 0 #a37700;
+  box-shadow: 0 5px 0 #9f7813, 0 0 40px rgba(199, 146, 22, 0.56);
+  // box-shadow: 0 8px 35px 5px rgba(#f1c700, 0.5%), 0px 7px 0 0 #a37700;
   white-space: normal;
-  background: #f1c700 url("../img/sprite/download.svg") no-repeat 45px 25px/40px;
+  border: none;
+  background-image:  url("../img/sprite/download.svg"), linear-gradient(to bottom, #ffe25b 0%, #c79216 100%);
+  background-position: 40px 20px, center;
+  background-size: 30px, cover;
+  background-repeat: no-repeat;
 
   &--width {
     max-width: 255px;
     font-size: 12px;
     line-height: 18px;
     padding-left: 80px;
-    background-position: 25px 16px;
+    background-position: 25px 16px, center;
+  }
+
+  @media (min-width: $screen-md) {
+    font: 700 18px/25px "Geometria", "Arial", sans-serif;
+    padding: 19px 40px 20px 110px;
+    background-position: 45px 25px, center;
+    background-size: 40px, cover;
   }
 }

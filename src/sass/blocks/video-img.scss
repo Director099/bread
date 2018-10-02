@@ -1,10 +1,14 @@
 .video-img {
   display: flex;
   max-width: 570px;
-  height: 468px;
-  border-radius: 15px;
+  height: 412px;
   background: url("../img/img-video.jpg") no-repeat center / cover;
   cursor: pointer;
+
+  @media (min-width: $screen-md) {
+    border-radius: 15px;
+    height: 468px;
+  }
 }
 
 .video-img__wrap {
@@ -26,8 +30,9 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  font-size: 16px;
   color: $white;
-  padding-bottom: 3px;
+  padding-bottom: 7px;
   margin: 0;
   border-bottom: 2px solid $white;
 }

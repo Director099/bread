@@ -1,11 +1,32 @@
 .block-equipment {
+  padding-top: 69px;
+  padding-bottom: 60px;
   background: url("../img/bg-equipment.jpg") no-repeat center / cover;
+
+  @media(min-width: $screen-md) {
+
+  }
 }
 
 .block-equipment__title {
-  margin-bottom: 78px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+
+  &::after {
+    left: 27px;
+    top: -19px;
+  }
+
+  @media(min-width: $screen-md) {
+    margin-bottom: 78px;
+  }
 }
 
 .block-equipment__production {
-  margin-top: 65px;
+  margin-top: 8px;
+
+  @media(min-width: $screen-md) {
+    margin-top: 65px;
+  }
 }

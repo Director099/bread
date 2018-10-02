@@ -1,33 +1,53 @@
 .price {
   @include ul-none();
-  margin-left: 23px;
-  margin-bottom: 55px;
+  margin-left: 0px;
+  margin-bottom: 32px;
+  text-align: center;
   color: $white;
+
+  @media(min-width: $screen-md) {
+    margin-left: 23px;
+    margin-bottom: 55px;
+  }
 }
 
 .price__item {
   display: flex;
   align-items: center;
-  margin-bottom: 29px;
+  margin-bottom: 3px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 29px;
+  }
 }
 
 .price__invest {
   display: inline-block;
-  max-width: 252px;
+  max-width: 167px;
   width: 100%;
   text-align: right;
-  margin-right: 29px;
-  font: 700 18px/23px "Geometria", "Arial", sans-serif;
+  margin-right: 10px;
+  font: 400 12px/23px "Geometria", "Arial", sans-serif;
 
   &--size {
-    font: 700 27px/30px "Geometria", "Arial", sans-serif;
+    font: 700 18px/30px "Geometria", "Arial", sans-serif;
+
+    @media(min-width: $screen-md) {
+      font: 700 27px/30px "Geometria", "Arial", sans-serif;
+    }
+  }
+
+  @media(min-width: $screen-md) {
+    max-width: 252px;
+    margin-right: 29px;
+    font: 400 18px/30px "Geometria", "Arial", sans-serif;
   }
 }
 
 .price__cost {
   position: relative;
   padding-left: 26px;
-  font: 400 24px/27px "UniNeue", "Arial", sans-serif;
+  font: 400 16px/27px "UniNeue", "Arial", sans-serif;
   background: url("../img/icon/price.png") no-repeat 0 50%;
 
   &::after {
@@ -41,11 +61,20 @@
   }
 
   &--color {
+    font-size: 18px;
     color: #ffc500;
     background: transparent;
+
+    @media(min-width: $screen-md) {
+      font-size: 24px;
+    }
 
     &::after {
       background: url("../img/sprite/ruble-color.svg") no-repeat center / cover;
     }
+  }
+
+  @media(min-width: $screen-md) {
+    font: 400 24px/27px "UniNeue", "Arial", sans-serif;
   }
 }

@@ -1,12 +1,27 @@
 .block-info {
   color: $white;
+  text-align: center;
+  width: 102%;
+
+  @media(min-width: $screen-md) {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .block-info__ident {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+
+  @media(min-width: $screen-md) {
+    margin-bottom: 30px;
+  }
 }
 
 .block-info em {
   display: block;
-  font: 400 14px/23px "Geometria", "Arial", sans-serif;
+  font: 400 12px/23px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-md) {
+    font: 400 14px/23px "Geometria", "Arial", sans-serif;
+  }
 }

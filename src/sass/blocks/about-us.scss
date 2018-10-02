@@ -1,0 +1,37 @@
+.about-us {
+
+}
+
+.about-us__row {
+  @include make-row();
+
+  @media (min-width: $screen-xl) {
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+  }
+}
+
+.about-us__column {
+  @include make-col-ready();
+
+  @media(min-width: $screen-xl) {
+    @include make-col(6);
+  }
+}
+
+.about-us__column-ident {
+  padding: 0;
+  margin-bottom: 50px;
+
+  @media(min-width: $screen-md) {
+    padding: 0 15px;
+  }
+}
+
+.about-us__title {
+  padding-top: 15px;
+
+  @media(min-width: $screen-md) {
+    padding: 0px;
+  }
+}

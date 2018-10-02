@@ -5,5 +5,9 @@
 
 .main-block__text {
   color: #e5d8cf;
-  font: 300 16px/29px "Geometria", "Arial", sans-serif;
+  font: 300 12px/21px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-md) {
+    font: 300 16px/29px "Geometria", "Arial", sans-serif;
+  }
 }

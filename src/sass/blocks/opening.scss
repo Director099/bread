@@ -1,10 +1,15 @@
 .opening {
   // padding: 0;
+  padding-top: 70px;
   background: url("../img/bg-opening.jpg") no-repeat center / cover;
 }
 
 .opening__title {
-  margin-bottom: 51px;
+  margin-bottom: 30px;
+
+  @media(min-width: $screen-md) {
+    margin-bottom: 51px;
+  }
 }
 
 .opening__block-info {

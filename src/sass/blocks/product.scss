@@ -1,0 +1,21 @@
+.product {
+  padding-top: 34px;
+}
+
+.product__title {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 69px;
+
+  &::after {
+    left: -0px;
+    top: 50%;
+    margin-top: -1px;
+    transform: translateX(0%);
+  }
+}
+
+.product__tagline {
+  text-align: left;
+  margin-top: -18px;
+}

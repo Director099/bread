@@ -1,18 +1,31 @@
 .title {
   position: relative;
   max-width: 920px;
-  font: 900 42px/60px "Geometria", "Arial", sans-serif;
+  font: 900 25px/35px "Geometria", "Arial", sans-serif;
   color: #24110c;
   margin-bottom: 10px;
+  text-align: center;
 
   &::after {
     content: "";
     position: absolute;
-    left: -102px;
-    top: 33px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 52px;
     height: 2px;
     background: $color-warning;
+
+    @media (min-width: $screen-md) {
+      left: -102px;
+      top: 33px;
+      transform: translateX(0%);
+    }
+  }
+
+  &--main {
+    font-size: 28px;
+    line-height: 40px;
   }
 
   &--size {
@@ -32,6 +45,15 @@
       top: 0;
       transform: translateX(-50%);
     }
+  }
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+    font: 900 42px/60px "Geometria", "Arial", sans-serif;
+  }
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
   }
 }
 

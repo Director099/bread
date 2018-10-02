@@ -67,14 +67,24 @@ $('.gallery').owlCarousel({
     dots: false,
     margin: 20,
     animateOut: 'fadeOut',
-    items: 3
+    responsive:{
+      0:{
+          items:1
+      },
+      767:{
+          items:2
+      },
+      1170:{
+          items:3
+      }
+    }
 })
 
 $('.catalog__slider').owlCarousel({
     loop:true,
     nav:false,
     dots: false,
-    autoWidth: true,
+    // autoWidth: true,
     center: true,
     items: 1
 })

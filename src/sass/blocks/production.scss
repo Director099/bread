@@ -4,18 +4,23 @@
 
 .production__text {
   color: #ede0d2;
-  font: 400 24px/42px "Geometria", "Arial", sans-serif;
-  margin-bottom: 40px;
+  font: 400 14px/21px "Geometria", "Arial", sans-serif;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-md) {
+    font: 400 24px/42px "Geometria", "Arial", sans-serif;
+    margin-bottom: 40px;
+  }
 }
 
 .production__list {
   @include ul-none();
-  margin-bottom: 36px;
+  margin-bottom: 41px;
 }
 
 .production__item {
   position: relative;
-  padding-left: 80px;
+  padding-left: 40px;
   color: $white;
 
   &::after {
@@ -23,16 +28,37 @@
     position: absolute;
     left: 0;
     top: -6px;
-    width: 66px;
-    height: 66px;
-    background: url("../img/icon/circle.png") no-repeat center;
+    width: 29px;
+    height: 44px;
+    background: url("../img/icon/circle.png") no-repeat center / cover;
+  }
+
+  @media(min-width: $screen-md) {
+    padding-left: 80px;
+
+    &::after {
+      width: 66px;
+      height: 66px;
+    }
   }
 }
 
 .production__item strong {
-  font: 700 18px/32px "Geometria", "Arial", sans-serif;
+  font: 700 14px/32px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-md) {
+    font: 700 18px/32px "Geometria", "Arial", sans-serif;
+  }
 }
 
 .production__item p {
-  font: 300 14px/25px "Geometria", "Arial", sans-serif;
+  font: 300 10px/16px "Geometria", "Arial", sans-serif;
+  margin-top: -5px;
+  margin-bottom: 10px;
+
+  @media(min-width: $screen-md) {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font: 300 14px/25px "Geometria", "Arial", sans-serif;
+  }
 }

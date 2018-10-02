@@ -1,24 +1,59 @@
 @mixin slider-arrow() {
   position: absolute;
   top: 50%;
-  transform: translateX(-50%);
-  width: 48px;
-  height: 48px;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
   background-color: #c79216 !important;
   border-radius: 50%;
   z-index: 9;
+  margin: 0;
+
+  @media(min-width: $screen-md) {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .gallery {
   position: relative;
+  margin-top: 45px;
+
+  &.mob {
+    display: block;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &.desc {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $screen-xl) {
+
+  }
 }
 
 .gallery .owl-item:nth-child(odd) .item .gallery__img:last-child {
-  height: 400px;
+  height: 288px;
+
+  @media(min-width: $screen-xl) {
+    height: 400px;
+  }
 }
 
 .gallery .owl-item:nth-child(even) .item .gallery__img:first-child {
-  height: 400px;
+  height: 288px;
+
+  @media(min-width: $screen-xl) {
+    height: 400px;
+  }
 }
 
 .gallery .item .gallery__img:first-child  {
@@ -85,14 +120,6 @@
   margin: 0;
 }
 
-// .gallery .owl-stage {
-//   margin: 0 -10px;
-// }
-
-// .gallery .owl-item {
-//   padding: 0 10px;
-// }
-
 .gallery .owl-nav span {
   color: $white;
   font-size: 34px;
@@ -101,10 +128,18 @@
 
 .gallery .owl-nav .owl-prev {
   @include slider-arrow();
-  left: -60px
+  left: -12px;
+
+  @media (min-width: $screen-xl) {
+    left: -60px;
+  }
 }
 
 .gallery .owl-nav .owl-next {
   @include slider-arrow();
-  right: -110px
+  right: -12px;
+
+  @media (min-width: $screen-xl) {
+    right: -60px;
+  }
 }

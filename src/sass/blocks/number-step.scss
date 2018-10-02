@@ -1,8 +1,15 @@
 .number-step {
   color: #ffc815;
-  font-size: 48px;
+  font-size: 27px;
   line-height: 45px;
   font-weight: 700;
+  text-align: center;
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
+    font-size: 48px;
+    line-height: 45px;
+  }
 }
 
 .number-step span {

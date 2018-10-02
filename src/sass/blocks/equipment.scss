@@ -1,37 +1,63 @@
 .equipment {
-  max-width: 270px;
-  min-height: 244px;
+  min-height: 134px;
   width: 100%;
-  padding: 35px 28px 24px 43px;
+  padding: 22px 28px 24px 102px;
   color: $white;
-  background: rgba($black, 0.6%);
+  background-color: rgba($black, 0.6%);
   border-radius: $radius;
 
   &--icon {
-    background: transparent;
-    padding: 0;
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  &--icon-1 {
+    background-image: url("../img/icon/iso.png");
+    background-repeat: no-repeat;
+    background-position: 26px 31px;
+  }
+
+  &--icon-2 {
+    background-image: url("../img/icon/certificate.png");
+    background-repeat: no-repeat;
+    background-position: 40px 32px;
+  }
+
+  &--icon-3 {
+    background-image: url("../img/icon/waranty.png");
+    background-repeat: no-repeat;
+    background-position: 40px 32px;
+  }
+
+  @media(min-width: $screen-md) {
+    max-width: 270px;
+    padding: 35px 28px 24px 43px;
+    min-height: 244px;
   }
 }
 
 .equipment__title {
-  padding-top: 75px;
-  font: 700 18px/32px "Geometria", "Arial", sans-serif;
+  // padding-top: 75px;
+  margin-bottom: 0;
+  font: 700 14px/32px "Geometria", "Arial", sans-serif;
 
-  &--icon-1 {
-    background: url("../img/icon/iso.png") no-repeat top left;
-  }
-
-  &--icon-2 {
-    background: url("../img/icon/waranty.png") no-repeat top left;
-  }
-
-  &--icon-3 {
-    background: url("../img/icon/certificate.png") no-repeat top left;
+  @media(min-width: $screen-md) {
+    font: 700 18px/32px "Geometria", "Arial", sans-serif;
+    margin-bottom: 10px;
   }
 }
 
 .equipment p {
   color: #ede0d2;
-  font: 400 16px/27px "Geometria", "Arial", sans-serif;
+  font: 400 12px/18px "Geometria", "Arial", sans-serif;
   margin: 0;
+
+  @media(min-width: $screen-md) {
+    font: 400 16px/27px "Geometria", "Arial", sans-serif;
+  }
 }

@@ -3,9 +3,14 @@
 }
 
 .nominations__text {
-  margin-bottom: 35px;
-  color: $white;
-  font: 400 21px/32px "Geometria", "Arial", sans-serif;
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-bottom: 35px;
+    color: $white;
+    font: 400 21px/32px "Geometria", "Arial", sans-serif;
+  }
 }
 
 .nominations__text span {
@@ -22,8 +27,15 @@
 }
 
 .nominations__item {
-  max-width: 158px;
-  padding-left: 55px;
-  font: 700 16px/25px "Geometria", "Arial", sans-serif;
-  background: url("../img/icon/wreath.png") no-repeat 0 50%;
+  max-width: 62px;
+  font: 700 10px/18px "Geometria", "Arial", sans-serif;
+  padding-top: 41px;
+  background: url("../img/icon/wreath.png") no-repeat 50% 0% / 27px;
+
+  @media(min-width: $screen-md) {
+    max-width: 158px;
+    padding-left: 55px;
+    background: url("../img/icon/wreath.png") no-repeat 0 50%;
+    font: 700 16px/25px "Geometria", "Arial", sans-serif;
+  }
 }

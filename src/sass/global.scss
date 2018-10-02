@@ -3,8 +3,12 @@
 }
 
 body {
-  font: 400 14px "Geometria", "Arial", sans-serif;
+  font: 400 12px "Geometria", "Arial", sans-serif;
   color: $text-color;
+
+  @media (min-width: $screen-md) {
+    font: 400 14px "Geometria", "Arial", sans-serif;
+  }
 }
 
 a {

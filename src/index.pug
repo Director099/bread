@@ -9,7 +9,7 @@ block header
     .container.fullpage__container
       .fullpage__content
         section.main-block.fullpage__main-block
-          h1.title.title--color Франшиза #[span «Хлеб из тандыра»]
+          h1.title.title--color.title--main Франшиза #[span «Хлеб из тандыра»]
           p.main-block__text Открой экологически чистый бизнес по стандартам ISO. Тандырная пекарня с полезной продукцией без добавления красителей, консервантов и усилителей вкуса.
         .nominations
           p.nominations__text Номинированы в трех номинациях в 2017 году #[span в рейтинге GOLDEN BRAND]
@@ -29,17 +29,12 @@ block header
       .item(style="background-image: url('../img/slider-head/bg-cooking.jpg')" data-text="Процесс")
 block content
   main
-    .bg-content
+    .bg-content.about-us
       .container
-        .row
-          section.col-md-6
-            h2.title «Хлеб из тандыра»
-            p.tagline Первая франшиза тандырной пекарни в России и мире
-            a.video-img(data-fancybox href="https://www.youtube.com/watch?v=__Tk4WIvh2Y")
-              .video-img__wrap
-                button.video-img__play(aria-label="Просмотр видео")
-                p.video-img__text Просмотр видео о франшизе
-          .col-md-6
+        h2.title «Хлеб из тандыра»
+        p.tagline Первая франшиза тандырной пекарни в России и мире
+        .about-us__row
+          .about-us__column
             ul.dignity
               li.dignity__item
                 h3.dignity__title Маржинальность от 300%
@@ -50,6 +45,11 @@ block content
               li.dignity__item
                 h3.dignity__title Действующие члены РАФ
                 p Являемся действующими члены Российской ассоциации франчайзинга с 2015 года. В 2016 году опередили IL Patio и Шоколадницу в рейтинге франшиз GOLDEN BRAND, в 2017 году номинированы в трех номинациях: #[strong «Франчайзер года», «Золотая франшиза», «Выбор народа»]
+          section.about-us__column.about-us__column-ident
+            a.video-img(data-fancybox href="https://www.youtube.com/watch?v=__Tk4WIvh2Y")
+              .video-img__wrap
+                button.video-img__play(aria-label="Просмотр видео")
+                p.video-img__text Просмотр видео о франшизе
         .income.row
           .col-md-6
             .income__month
@@ -60,8 +60,8 @@ block content
             .income__price.income__price--color-2
               strong.income__numb 495 000 #[sub руб]
               p Стоимость пакета франшизы  включая тандырную печь
-        h2.title.title--center Фотогалерея франшизы
-        .gallery.owl-carousel.owl-theme
+        h2.title.title--center.about-us__title Фотогалерея франшизы
+        .gallery.desc.owl-carousel.owl-theme
           .item
             a.gallery__img(
               style="background-image: url('../img/gallery/gallery-1.jpg')",
@@ -106,15 +106,40 @@ block content
               href="https://youtu.be/wKnB0YliaA0",
               data-fancybox="images"
               )
+        .gallery.mob.owl-carousel.owl-theme
+          .item
+            a.gallery__img(
+              style="background-image: url('../img/gallery/gallery-1.jpg')",
+              href="img/gallery/gallery-1.jpg",
+              data-fancybox="images"
+              )
+          .item
+            a.gallery__img(
+              style="background-image: url('../img/gallery/gallery-3.jpg')",
+              href="img/gallery/gallery-3.jpg",
+              data-fancybox="images"
+              )
+          .item
+            a.gallery__img(
+              style="background-image: url('../img/gallery/gallery-5.jpg')",
+              href="img/gallery/gallery-5.jpg",
+              data-fancybox="images"
+              )
+          .item
+            a.gallery__img.gallery__img--video(
+              style="background-image: url('../img/gallery/gallery-2.jpg')",
+              href="https://youtu.be/wKnB0YliaA0",
+              data-fancybox="images"
+              )
     .bg-content.block-tandyr
       section.container
-        h2.title.title--color В основе франшизы личный 20-ти летний  опыт в бизнесе
+        h2.title.title--color.block-tandyr__title В основе франшизы личный 20-ти летний  опыт в бизнесе
         ul.result.block-tandyr__result
           li.result__item.result__item--block-1
             strong 1 000 000 рублей
             p Ежемесячно приносит наша флагманская  пекарня на дальнем восток
           li.result__item.result__item--block-2
-            strong 1 000 000 рублей
+            strong 96 пекарен
             p Действующих по всему миру,  32 открываются в ближайшее время
           li.result__item.result__item--block-3
             p Лауреаты профессиональной премии Golden Brand, действующие члены Российской Ассоциации Франчайзинга, работаем по стандартам качества ISO.
@@ -123,26 +148,20 @@ block content
             p.number-entre__text Предпринимателя из России,  Европы и СНГ присоединились к франшизе
             span.number-entre__number 96
         +btn()
-    .bg-content
+    .bg-content.product
       .container
-        h2.title Более 80 видов выпечки
-        p без консервантов, усилителей вкуса и разрыхлителей
+        h2.title.product__title Более 80 видов выпечки
+        p.tagline.product__tagline без консервантов, усилителей вкуса и разрыхлителей
         .catalog
           .row
             .col-md-6
               .catalog__slider.owl-carousel.owl-theme
-                .item
-                  img(src="img/product/product-1.png", alt="Продукты из печи")
-                .item
-                  img(src="img/product/product-2.png", alt="Продукты из печи")
-                .item
-                  img(src="img/product/product-3.png", alt="Продукты из печи")
-                .item
-                  img(src="img/product/product-4.png", alt="Продукты из печи")
-                .item
-                  img(src="img/product/product-5.png", alt="Продукты из печи")
-                .item
-                  img(src="img/product/product-6.png", alt="Продукты из печи")
+                .item(style="background-image: url('../img/product/product-1.png')")
+                .item(style="background-image: url('../img/product/product-2.png')")
+                .item(style="background-image: url('../img/product/product-3.png')")
+                .item(style="background-image: url('../img/product/product-4.png')")
+                .item(style="background-image: url('../img/product/product-5.png')")
+                .item(style="background-image: url('../img/product/product-6.png')")
             .col-md-6
               section.catalog__content
                 h3.catalog__title Хачапури по-аджарски
@@ -164,26 +183,26 @@ block content
           .col-md-7
             .equipment-grid
               +equipment(
-                "equipment__title--icon-1",
+                "",
                 "Стандартизация",
                 "Работаем по стандартам ISO подтвержденным сертификатом качества",
-                "equipment-grid__ident"
+                "equipment-grid__ident equipment--icon-1"
               )
 
               .equipment.equipment--icon
                 img(src="img/icon/tandyr.png" alt="Иконка тандыра")
 
               +equipment(
-                "equipment__title--icon-2",
+                "",
                 "Полезная модель",
                 "Обладаем патентом на полезную модель — «тандырная печь»",
-                "equipment-grid__ident"
+                "equipment-grid__ident equipment--icon-2"
               )
               +equipment(
-                "equipment__title--icon-3",
+                "",
                 "Сертификация",
                 "Имеем все  сертификаты ЕАС на оборудование для СНГ и Европы",
-                "equipment-grid__ident"
+                "equipment-grid__ident equipment--icon-3"
               )
           .col-md-5
             .production.block-equipment__production
@@ -196,9 +215,9 @@ block content
                   strong Электрический глиняный тандыр
                   p габариты: 120х100 см
               +btn()
-    .bg-content
+    .bg-content.bg-calculator
       .container
-        h2.title.title--center Калькулятор экономических показателей
+        h2.title.title--center.bg-calculator__title Калькулятор экономических показателей
         .calculator
           .calculator__package
             header.calculator__choice
@@ -230,13 +249,14 @@ block content
                     span макс.
               .tab-pane.fade.show.active(id="tab-2" role="tabpanel")
           .calculator__result
-            p.calculator__total.calculator__total--rub Общая сумма инвестиций: #[strong 1 187 000]
-            p.calculator__total Общая сумма инвестиций: #[strong 8,5 мес]
+            .calculator__wrap-total
+              p.calculator__total.calculator__total--rub Общая сумма инвестиций: #[strong 1 187 000]
+              p.calculator__total Срок окупаемости: #[strong 8,5 мес]
             .calculator__profit
               strong Чистая прибыль за месяц:
               span 1 187 000
               small * Данные основаны на реальных отчетов действующих франчайзи с которыми вы можете ознакомиться.
-            +btn()
+            +btn('calculator__btn')
     .bg-content.opening
       .container
         .row
