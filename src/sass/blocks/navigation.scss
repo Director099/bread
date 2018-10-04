@@ -2,6 +2,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  display: none;
 
   &--active {
     &::after {
@@ -84,7 +85,12 @@
   background: transparent url("../img/sprite/menu.svg") no-repeat center / cover;
 
   @media(min-width: $screen-md) {
+    right: 15px;
+    top: 68px;
+  }
+
+  @media(min-width: $screen-xl) {
     right: 5px;
-    top: 15px;
+    top: 11px;
   }
 }

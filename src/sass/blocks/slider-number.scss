@@ -6,7 +6,7 @@
     @include ul-none();
     position: absolute;
     right: 0;
-    top: 242px;
+    top: 196px;
     right: 0px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 }
 
 .slider-number li {
-  margin-bottom: 50px;
+  margin-bottom: 28px;
   min-height: 22px;
   cursor: pointer;
   transition: $time;

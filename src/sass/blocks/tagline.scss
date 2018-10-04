@@ -9,8 +9,12 @@
 
   @media (min-width: $screen-md) {
     font: 400 21px/32px "Geometria", "Arial", sans-serif;
-    text-align: left;
-    margin-top: 0;
+    margin-top: -10px;
     margin-bottom: 10px;
+  }
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
+    margin-bottom: 46px;
   }
 }

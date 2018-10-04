@@ -1,4 +1,8 @@
 .container.container--max {
   position: relative;
-  max-width: 1400px;
+
+
+  @media(min-width: $screen-xl) {
+    max-width: 1400px;
+  }
 }

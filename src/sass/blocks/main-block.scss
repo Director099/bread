@@ -8,6 +8,12 @@
   font: 300 12px/21px "Geometria", "Arial", sans-serif;
 
   @media(min-width: $screen-md) {
+    margin-top: 19px;
+    font: 300 16px/29px "Geometria", "Arial", sans-serif;
+  }
+
+  @media(min-width: $screen-xl) {
+    margin-top: 15px;
     font: 300 16px/29px "Geometria", "Arial", sans-serif;
   }
 }

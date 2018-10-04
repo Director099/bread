@@ -17,16 +17,17 @@
     background: $color-warning;
 
     @media (min-width: $screen-md) {
+      top: -7px;
+    }
+
+    @media (min-width: $screen-xl) {
       left: -102px;
       top: 33px;
       transform: translateX(0%);
     }
   }
 
-  &--main {
-    font-size: 28px;
-    line-height: 40px;
-  }
+
 
   &--size {
     font-size: 27px;
@@ -48,12 +49,34 @@
   }
 
   @media (min-width: $screen-md) {
-    text-align: left;
+    text-align: center;
     font: 900 42px/60px "Geometria", "Arial", sans-serif;
   }
 
   @media (min-width: $screen-xl) {
     text-align: left;
+  }
+
+  &--main {
+    font-size: 28px;
+    line-height: 40px;
+
+    @media(min-width: $screen-md) {
+      text-align: left;
+    }
+
+    &::after {
+      @media(min-width: $screen-md) {
+        left: 0;
+        top: -21px;
+        transform: translateX(-0%);
+      }
+
+      @media(min-width: $screen-xl) {
+        left: -102px;
+        top: 33px;
+      }
+    }
   }
 }
 

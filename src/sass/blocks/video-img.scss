@@ -8,6 +8,11 @@
   @media (min-width: $screen-md) {
     border-radius: 15px;
     height: 468px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin: 0;
   }
 }
 

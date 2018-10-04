@@ -13,5 +13,9 @@
 }
 
 .opening__block-info {
-  margin-bottom: 57px;
+  margin-bottom: 28px;
+
+  @media(min-width: $screen-md) {
+    margin-bottom: 57px;
+  }
 }

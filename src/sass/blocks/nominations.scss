@@ -7,7 +7,7 @@
 
   @media (min-width: $screen-md) {
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     color: $white;
     font: 400 21px/32px "Geometria", "Arial", sans-serif;
   }
@@ -17,6 +17,10 @@
   display: block;
   color: #e5d8cf;
   font: 300 14px/23px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-md) {
+    margin-top: 4px;
+  }
 }
 
 .nominations__list {
@@ -34,8 +38,14 @@
 
   @media(min-width: $screen-md) {
     max-width: 158px;
-    padding-left: 55px;
-    background: url("../img/icon/wreath.png") no-repeat 0 50%;
+    padding-top: 0;
+    padding-left: 62px;
+    background: url("../img/icon/wreath.png") no-repeat 6px 50%;
     font: 700 16px/25px "Geometria", "Arial", sans-serif;
+  }
+
+  @media(min-width: $screen-xl) {
+    padding-left: 66px;
+    background: url("../img/icon/wreath.png") no-repeat 10px 50%;
   }
 }

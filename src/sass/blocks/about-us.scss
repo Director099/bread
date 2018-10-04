@@ -1,5 +1,11 @@
 .about-us {
+  background-image: url("../img/peach-bg-mob.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
 
+  @media(min-width: $screen-xl) {
+    background-image: url("../img/peach-bg.jpg");
+  }
 }
 
 .about-us__row {
@@ -7,15 +13,23 @@
 
   @media (min-width: $screen-xl) {
     flex-direction: row-reverse;
-    margin-bottom: 100px;
+    margin-bottom: 48px;
   }
 }
 
-.about-us__column {
+.about-us__column-7 {
   @include make-col-ready();
 
   @media(min-width: $screen-xl) {
-    @include make-col(6);
+    @include make-col(7);
+  }
+}
+
+.about-us__column-5 {
+  @include make-col-ready();
+
+  @media(min-width: $screen-xl) {
+    @include make-col(5);
   }
 }
 

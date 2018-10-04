@@ -25,13 +25,13 @@
 }
 
 .income__month p {
-  max-width: 260px;
+  max-width: 284px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 0;
-  padding-top: 238px;
+  padding-top: 231px;
   font: 400 14px/21px "Geometria", "Arial", sans-serif;
   color: $white;
   text-align: center;
@@ -39,7 +39,7 @@
   @media (min-width: $screen-md) {
     height: 610px;
     text-align: left;
-    margin-right: 45px;
+    margin-right: 21px;
     font: 400 24px/42px "Geometria", "Arial", sans-serif;
   }
 }
@@ -76,7 +76,8 @@
   text-align: center;
 
   @media (min-width: $screen-md) {
-    max-width: 310px;
+    top: 184px;
+    max-width: 330px;
     left: 60px;
     text-align: left;
     font: 400 18px/29px "Geometria", "Arial", sans-serif;
@@ -95,6 +96,7 @@
   @media (min-width: $screen-md) {
     width: auto;
     text-align: left;
+    padding-top: 97px;
     padding-left: 60px;
     font: 400 80px/80px "UniNeue", "Arial", sans-serif;
   }

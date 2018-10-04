@@ -34,7 +34,7 @@ block content
         h2.title «Хлеб из тандыра»
         p.tagline Первая франшиза тандырной пекарни в России и мире
         .about-us__row
-          .about-us__column
+          .about-us__column.about-us__column-5
             ul.dignity
               li.dignity__item
                 h3.dignity__title Маржинальность от 300%
@@ -45,7 +45,7 @@ block content
               li.dignity__item
                 h3.dignity__title Действующие члены РАФ
                 p Являемся действующими члены Российской ассоциации франчайзинга с 2015 года. В 2016 году опередили IL Patio и Шоколадницу в рейтинге франшиз GOLDEN BRAND, в 2017 году номинированы в трех номинациях: #[strong «Франчайзер года», «Золотая франшиза», «Выбор народа»]
-          section.about-us__column.about-us__column-ident
+          section.about-us__column.about-us__column-ident.about-us__column-7
             a.video-img(data-fancybox href="https://www.youtube.com/watch?v=__Tk4WIvh2Y")
               .video-img__wrap
                 button.video-img__play(aria-label="Просмотр видео")
@@ -275,14 +275,6 @@ block content
             .block-info.opening__block-info
               em.block-info__ident * Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи
               em ** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.
-            .group-info
-              +btn(
-                "btn--width"
-              )
-              .document
-                p.document__text Смотреть #[a(href="#") Лайт-формат]
-                small (для помещений без посадочных мест)
-
           .col-md-6
             section.pack-franchise
               h3.pack-franchise__title Пакет франшизы
@@ -302,6 +294,13 @@ block content
                 li.pack-franchise__item Персонал - подбор, обучение, мотивация, документация
                   small (должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )
                 li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
+          .group-info
+            +btn(
+              "btn--width"
+            )
+            .document
+              p.document__text Смотреть #[a(href="#") Лайт-формат]
+              small (для помещений без посадочных мест)
     .bg-content
       .container
         h2.title Еще сомневаетесь?

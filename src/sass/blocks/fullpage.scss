@@ -21,23 +21,28 @@
   margin-top: 144px;
 
   @media (min-width: $screen-md) {
-    margin-top: 295px;
-    margin-bottom: 83px;
+    margin-top: 272px;
+    margin-bottom: 87px;
   }
 
   @media (min-width: $screen-xl) {
-    margin-top: 257px;
+    margin-top: 227px;
+    margin-bottom: 70px;
   }
 }
 
 .fullpage .item {
-  background-repeat: no-repeat center / cover;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 480px;
 
+  @media (min-width: $screen-md) {
+    min-height: 812px;
+  }
+
   @media (min-width: $screen-xl) {
-    height: 100vh;
+    // height: 100vh;
     min-height: 796px;
   }
 }
@@ -61,7 +66,7 @@
   }
 
   @media (min-width: $screen-xl) {
-    height: 100vh;
+    // height: 100vh;
     min-height: 796px;
   }
 }
