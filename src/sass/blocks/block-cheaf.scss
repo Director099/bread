@@ -1,0 +1,83 @@
+.block-cheaf {
+  text-align: left;
+  position: relative;
+  color: $white;
+  margin-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 12px;
+    width: 125px;
+    height: 100px;
+    background: url("../img/sprite/logo-tech.svg") no-repeat;
+
+    @media(min-width: $screen-md) {
+      top: -142px;
+      left: -20px;
+      width: 200px;
+      height: 140px;
+    }
+
+    @media(min-width: $screen-xl) {
+      top: -17px;
+      left: -190px;
+    }
+  }
+
+  @media(min-width: $screen-md) {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    margin-bottom: 0;
+    max-width: 290px;
+  }
+
+  @media(min-width: $screen-xl) {
+    position: absolute;
+    left: 183px;
+    bottom: -17px;
+    margin-bottom: 0;
+    max-width: 290px;
+  }
+}
+
+.block-cheaf__clar {
+  display: block;
+  margin-bottom: 5px;
+  font: 400 14px/21px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-md) {
+    font-size: 12px;
+  }
+}
+
+.block-cheaf__name {
+  display: block;
+  max-width: 170px;
+  margin-left: 120px;
+  margin-bottom: 10px;
+  font: 700 27px/35px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-md) {
+    max-width: inherit;
+    margin-left: 0;
+    font: 700 21px/22px  "Geometria", "Arial", sans-serif;
+  }
+
+  @media(min-width: $screen-xl) {
+    font: 700 27px/32px "Geometria","Arial",sans-serif;
+    margin-bottom: 20px;
+  }
+}
+
+.block-cheaf p {
+  max-width: 300px;
+  margin: 0;
+  font: 300 12px/18px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-xl) {
+    font: 300 16px/27px "Geometria", "Arial", sans-serif;
+  }
+}

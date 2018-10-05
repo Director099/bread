@@ -9,26 +9,33 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @media(min-width: $screen-md) {
+    max-width: 590px;
+    height: 283px;
+    margin-top: 81px;
+    margin-bottom: 22px;
+  }
+
+  @media(min-width: $screen-xl) {
+    margin-top: 111px;
+  }
 }
 
-// .catalog img {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   // max-width: 400px;
-//   // max-height: 250px;
-//   max-height: 100%;
-//   max-width: 100%;
-//   // width: auto !important;
-//   margin: 0 auto;
-// }
+.catalog__row {
+  margin-bottom: 65px;
+}
 
 .catalog__content {
 
+  @media (min-width: $screen-md) {
+    text-align: center;
+  }
+
   @media (min-width: $screen-xl) {
+    margin-top: 79px;
     max-width: 366px;
+    text-align: left;
   }
 }
 
@@ -43,6 +50,11 @@
   @media (min-width: $screen-md) {
     font-size: 42px;
     line-height: 60px;
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
     margin-bottom: 15px;
   }
 }
@@ -56,17 +68,22 @@
   margin-bottom: 40px;
 
   @media (min-width: $screen-md) {
+    max-width: 460px;
     font-size: 18px;
     line-height: 27px;
+    margin: 0 auto 13px;
+  }
+
+  @media (min-width: $screen-xl) {
     text-align: left;
-    margin-bottom: 20px;
+    margin: 0 auto 41px;
   }
 }
 
 .catalog__list {
   display: none;
 
-  @media(min-width: $screen-md) {
+  @media(min-width: $screen-xl) {
     @include ul-none();
     display: flex;
     justify-content: space-between;
@@ -87,5 +104,53 @@
     font-weight: 900;
     line-height: 23px;
     text-decoration: underline;
+  }
+}
+
+.catalog__row {
+  position: relative;
+}
+
+.catalog__arrow {
+  position: absolute;
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #c79216 url("../img/sprite/arrow-back.svg") no-repeat 45% 50% /15px;
+
+  @media(min-width: $screen-md) {
+    width: 50px;
+    height: 50px;
+    bottom: inherit;
+    top: 148px;
+  }
+
+  @media(min-width: $screen-xl) {
+    top: 194px;
+  }
+
+  &--prev {
+    left: 40px;
+
+    @media(min-width: $screen-md) {
+      left: 14px;
+    }
+  }
+
+  &--next {
+    transform: rotate(-180deg);
+    right: 40px;
+
+    @media(min-width: $screen-md) {
+      right: 14px;
+    }
+  }
+}
+
+.catalog__number {
+  @media(min-width: $screen-xl) {
+    font-size: 27px;
   }
 }

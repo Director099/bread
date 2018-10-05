@@ -72,10 +72,12 @@ $('.gallery').owlCarousel({
           items:1
       },
       767:{
-          items:2
+          items:2,
+          margin: 25
       },
       1170:{
-          items:3
+          items:3,
+          margin: 20
       }
     }
 })

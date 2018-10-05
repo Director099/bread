@@ -35,24 +35,40 @@
     }
   }
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: $screen-md) {
+    margin-top: 63px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 
+  @media (min-width: $screen-xl) {
+    margin-top: 78px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .gallery .owl-item:nth-child(odd) .item .gallery__img:last-child {
   height: 288px;
 
+  @media(min-width: $screen-md) {
+    height: 343px;
+  }
+
   @media(min-width: $screen-xl) {
-    height: 400px;
+    height: 289px;
   }
 }
 
 .gallery .owl-item:nth-child(even) .item .gallery__img:first-child {
   height: 288px;
 
+  @media(min-width: $screen-md) {
+    height: 343px;
+  }
+
   @media(min-width: $screen-xl) {
-    height: 400px;
+    height: 289px;
   }
 }
 
@@ -114,6 +130,14 @@
       background: $white url("../img/sprite/play-button-galery.svg") no-repeat center / 15px;
     }
   }
+
+  @media(min-width: $screen-md) {
+    height: 247px;
+  }
+
+  @media(min-width: $screen-xl) {
+    height: 400px;
+  }
 }
 
 .gallery .owl-nav {
@@ -130,6 +154,10 @@
   @include slider-arrow();
   left: -12px;
 
+  @media (min-width: $screen-md) {
+    left: -27px;
+  }
+
   @media (min-width: $screen-xl) {
     left: -60px;
   }
@@ -138,6 +166,10 @@
 .gallery .owl-nav .owl-next {
   @include slider-arrow();
   right: -12px;
+
+  @media (min-width: $screen-md) {
+    right: -27px;
+  }
 
   @media (min-width: $screen-xl) {
     right: -60px;

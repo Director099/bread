@@ -1,8 +1,20 @@
 .block-tandyr {
   padding-top: 76px;
-  padding-bottom: 105px;
-  background: url("../img/bg-tand.jpg") no-repeat center / cover;
+  padding-bottom: 55px;
+  background: url("../img/bg-tand.jpg") no-repeat -467px 0px / cover;
   min-height: 1300px;
+
+  @media(min-width: $screen-md) {
+    padding-top: 105px;
+    padding-bottom: 97px;
+    background: url("../img/bg-tand.jpg") no-repeat -354px / cover;
+  }
+
+  @media(min-width: $screen-xl) {
+    padding-top: 88px;
+    padding-bottom: 120px;
+    background: url("../img/bg-tand.jpg") no-repeat center / cover;
+  }
 }
 
 .block-tandyr__result {
@@ -10,12 +22,23 @@
   margin-top: 47px;
 
   @media (min-width: $screen-md) {
+    // margin-bottom: 165px;
+    margin-bottom: 57px;
+    margin-top: 75px;
+  }
+
+  @media(min-width: $screen-xl) {
+    margin-top: 92px;
     margin-bottom: 165px;
   }
 }
 
 .block-tandyr__entre {
-  margin-bottom: 101px;
+  margin-bottom: 20px;
+
+  @media(min-width: $screen-xl) {
+    margin-bottom: 101px;
+  }
 }
 
 .block-tandyr__title {
@@ -24,9 +47,19 @@
   &::after {
     left: 27px;
     top: -15px;
+
+    @media (min-width: $screen-xl) {
+      left: -100px;
+      top: 47px;
+    }
   }
 
   @media (min-width: $screen-md) {
-    text-align: center;
+    text-align: left;
+    padding-top: 13px;
+  }
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
   }
 }

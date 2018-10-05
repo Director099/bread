@@ -1,0 +1,78 @@
+.tynder-content {
+  position: relative;
+}
+
+.tynder-content__dot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: url("../img/circle-white.png") no-repeat center / contain;
+
+  @media(min-width: $screen-md) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.tynder-content__dot-1 {
+  top: 100px;
+
+  @media(min-width: $screen-md) {
+    left: 47px;
+    top: 80px;
+  }
+
+  @media(min-width: $screen-xl) {
+    top: 165px;
+    left: 5px;
+  }
+}
+
+.tynder-content__dot-2 {
+  top: 20px;
+  left: 80px;
+
+  @media(min-width: $screen-md) {
+    left: 220px;
+    top: -20px;
+  }
+
+  @media(min-width: $screen-xl) {
+    left: 300px;
+    top: 35px;
+  }
+}
+
+.tynder-content__dot-3 {
+  top: 80px;
+  left: 150px;
+
+  @media(min-width: $screen-md) {
+    left: 170px;
+    top: 150px;
+  }
+
+  @media(min-width: $screen-xl) {
+    left: 199px;
+    top: 230px;
+  }
+}
+
+.tynder-content__dot-4 {
+  top: 112px;
+  left: 250px;
+
+  @media(min-width: $screen-md) {
+    left: 450px;
+  }
+
+  @media(min-width: $screen-xl) {
+    left: 480px;
+    top: 112px;
+  }
+}
+
+.tynder-content__info {
+  text-align: right;
+}

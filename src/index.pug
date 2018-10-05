@@ -40,7 +40,7 @@ block content
                 h3.dignity__title Маржинальность от 300%
                 p Понятный и надежный бизнес, не подверженный кризису и политической обстановке, с высокой маржинальностью от 300% и низкими инвестициями до 1,2 млн. руб.
               li.dignity__item
-                h3.dignity__title Производство с 1987 года
+                h3.dignity__title Пекарни с 1997 года
                 p С 1987 года мы производим тандырные печеи, имеем Патент на «Полезную модель» и несем гарантийные обязательства. В 2014 году мы запускаем франшизу пекарни «Хлеб из тандыра» и за три года предпринимателями были открыты пекарни в России, Польше, Чехии, Казахстане.
               li.dignity__item
                 h3.dignity__title Действующие члены РАФ
@@ -51,15 +51,15 @@ block content
                 button.video-img__play(aria-label="Просмотр видео")
                 p.video-img__text Просмотр видео о франшизе
         .income.row
-          .col-md-6
+          .income__column.income__column_6-2
             .income__month
               p Два месяца средний срок выхода на точку безубыточности по данным франчайзи
-          .col-md-6
+          .income__column.income__column_5-8
             .income__price.income__price--color-1
               p Средний доход одной пекарни  уже через 7 недель после запуска
             .income__price.income__price--color-2
               strong.income__numb 495 000 #[sub руб]
-              p Стоимость пакета франшизы  включая тандырную печь
+              p Стоимость стартового пакета  (уже включена в сумму общих инвестиции)
         h2.title.title--center.about-us__title Фотогалерея франшизы
         .gallery.desc.owl-carousel.owl-theme
           .item
@@ -143,18 +143,28 @@ block content
             p Действующих по всему миру,  32 открываются в ближайшее время
           li.result__item.result__item--block-3
             p Лауреаты профессиональной премии Golden Brand, действующие члены Российской Ассоциации Франчайзинга, работаем по стандартам качества ISO.
-        .number-entre.block-tandyr__entre
-          .number-entre__content
-            p.number-entre__text Предпринимателя из России,  Европы и СНГ присоединились к франшизе
-            span.number-entre__number 96
-        +btn()
+        .tynder-content
+          button.tynder-content__dot.tynder-content__dot-1.tynder-content__dot--active(aria-label="Точки для появления текста Тандера")
+          button.tynder-content__dot.tynder-content__dot-2(aria-label="Точки для появления текста Тандера")
+          button.tynder-content__dot.tynder-content__dot-3(aria-label="Точки для появления текста Тандера")
+          button.tynder-content__dot.tynder-content__dot-4(aria-label="Точки для появления текста Тандера")
+          .number-entre.block-tandyr__entre
+            .number-entre__content
+              p.number-entre__text Предпринимателя из России,  Европы и СНГ присоединились к франшизе
+              span.number-entre__number 94
+          .tynder-content__info
+            .block-cheaf
+              small.block-cheaf__clar Управляющий и собственник пекарни
+              strong.block-cheaf__name Виктория Богданова
+              p Выпускник и резидент Сколково, ученица кулинарной школы Ле Кордон Блю в Париже и Лондоне
+            +btn()
     .bg-content.product
       .container
         h2.title.product__title Более 80 видов выпечки
         p.tagline.product__tagline без консервантов, усилителей вкуса и разрыхлителей
         .catalog
-          .row
-            .col-md-6
+          .row.catalog__row
+            .col-xl-7
               .catalog__slider.owl-carousel.owl-theme
                 .item(style="background-image: url('../img/product/product-1.png')")
                 .item(style="background-image: url('../img/product/product-2.png')")
@@ -162,11 +172,13 @@ block content
                 .item(style="background-image: url('../img/product/product-4.png')")
                 .item(style="background-image: url('../img/product/product-5.png')")
                 .item(style="background-image: url('../img/product/product-6.png')")
-            .col-md-6
+            .col-xl-5
               section.catalog__content
                 h3.catalog__title Хачапури по-аджарски
                 p.catalog__desc хачапури по-аджарски, по имеретински,  гурийские, мигрельские
-                .number-step.communion__number 01 #[span / 05]
+                .number-step.number-step--black.catalog__number 01 #[span / 05]
+            button.catalog__arrow.catalog__arrow--prev(aria-label="Слайд назад")
+            button.catalog__arrow.catalog__arrow--next(aria-label="Слайд вправо")
           ul.catalog__list
             li.catalog__item.catalog__item--active Хачапури по-анжарски
             li.catalog__item Тандырные  лепешки

@@ -1,11 +1,13 @@
 .video-img {
   display: flex;
-  max-width: 570px;
+  width: 100%;
+  max-width: 100%;
   height: 412px;
   background: url("../img/img-video.jpg") no-repeat center / cover;
   cursor: pointer;
 
   @media (min-width: $screen-md) {
+    max-width: 570px;
     border-radius: 15px;
     height: 468px;
     margin: 0 auto;

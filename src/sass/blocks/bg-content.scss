@@ -5,7 +5,12 @@
   padding-bottom: 34px;
 
   @media (min-width: $screen-md) {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $screen-xl) {
     padding-top: 63px;
-    padding-bottom: 75px;
+    padding-bottom: 80px;
   }
 }

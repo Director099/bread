@@ -1,5 +1,14 @@
 .product {
   padding-top: 34px;
+
+  @media(min-width: $screen-md) {
+    padding-top: 87px;
+  }
+
+  @media(min-width: $screen-xl) {
+    padding-top: 87px;
+    padding-bottom: 102px;
+  }
 }
 
 .product__title {
@@ -13,9 +22,37 @@
     margin-top: -1px;
     transform: translateX(0%);
   }
+
+  @media(min-width: $screen-md) {
+    font-size: 27px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 98px;
+
+    &::after {
+      top: 14px;
+    }
+  }
+
+  @media(min-width: $screen-xl) {
+    padding-left: 0;
+
+    &::after {
+      top: 13px;
+    }
+  }
 }
 
 .product__tagline {
   text-align: left;
   margin-top: -18px;
+
+  @media(min-width: $screen-md) {
+    padding-left: 102px;
+    margin-top: 14px;
+  }
+
+  @media(min-width: $screen-xl) {
+    padding-left: 0;
+  }
 }

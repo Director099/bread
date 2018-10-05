@@ -1,6 +1,6 @@
 .number-entre {
   position: relative;
-  max-width: 100%;
+  max-width: 320px;
   height: 275px;
   margin-left: auto;
 
@@ -17,6 +17,7 @@
   @media (min-width: $screen-md) {
     max-width: 388px;
     height: 367px;
+    margin-bottom: 50px;
   }
 }
 
@@ -36,10 +37,14 @@
   font: 300 14px/21px "Geometria", "Arial", sans-serif;
 
   @media (min-width: $screen-md) {
-    padding-top: 121px;
+    padding-top: 114px;
     padding-right: 81px;
     padding-left: 29px;
     font: 300 18px/29px "Geometria", "Arial", sans-serif;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: 121px;
   }
 }
 
@@ -52,7 +57,7 @@
 
   @media (min-width: $screen-md) {
     left: 0;
-    bottom: -50px;
+    bottom: -45px;
     font: 700 200px/200px "UniNeue", "Arial", sans-serif;
   }
 }
