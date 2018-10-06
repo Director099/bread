@@ -18,7 +18,10 @@
 @import "global";
 
 @import "blocks/fullpage";
+@import "blocks/phone";
+@import "blocks/mail";
 @import "blocks/page-header";
+@import "blocks/address";
 @import "blocks/page-footer";
 @import "blocks/title";
 @import "blocks/video-img";
@@ -40,9 +43,8 @@
 @import "blocks/block-info";
 @import "blocks/group-info";
 @import "blocks/document";
-@import "blocks/address";
-@import "blocks/phone";
-@import "blocks/mail";
+
+
 @import "blocks/social";
 @import "blocks/developer";
 @import "blocks/callback";

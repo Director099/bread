@@ -6,8 +6,13 @@
   color: $white;
 
   @media(min-width: $screen-md) {
-    margin-left: 23px;
-    margin-bottom: 55px;
+    margin-left: 83px;
+    margin-bottom: 46px;
+  }
+
+  @media(min-width: $screen-xl) {
+    margin-left: 0px;
+    margin-bottom: 46px;
   }
 }
 
@@ -17,7 +22,7 @@
   margin-bottom: 3px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 29px;
+    margin-bottom: 15px;
   }
 }
 
@@ -29,18 +34,18 @@
   margin-right: 10px;
   font: 400 12px/23px "Geometria", "Arial", sans-serif;
 
+  @media(min-width: $screen-md) {
+    max-width: 252px;
+    margin-right: 29px;
+    font: 400 18px/30px "Geometria", "Arial", sans-serif;
+  }
+
   &--size {
     font: 700 18px/30px "Geometria", "Arial", sans-serif;
 
     @media(min-width: $screen-md) {
       font: 700 27px/30px "Geometria", "Arial", sans-serif;
     }
-  }
-
-  @media(min-width: $screen-md) {
-    max-width: 252px;
-    margin-right: 29px;
-    font: 400 18px/30px "Geometria", "Arial", sans-serif;
   }
 }
 

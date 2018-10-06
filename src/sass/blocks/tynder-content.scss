@@ -75,4 +75,10 @@
 
 .tynder-content__info {
   text-align: right;
+  max-width: 290px;
+  margin-left: auto;
+
+  @media(min-width: $screen-md) {
+    max-width: 100%;
+  }
 }

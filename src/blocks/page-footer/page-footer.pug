@@ -4,12 +4,12 @@ mixin page-footer()
       a.page-footer__logo
         img(src="img/logo.png" alt="«Хлеб из тандыра»")
       .row.page-footer__row
-        .col-md-3
-          p.address Россиия #[br] Республика Башкортостан, Уфа, улица Менделеева, 130
-        .col-md-3
-          a.mail.page-footer__mail(href="mailto:info@mytandir.ru") info@mytandir.ru
-          a.phone(href="tel:88007755807") 8 800 77 55 807
-        .col-md-3
+        .col-md-6.col-xl-3
+          p.address.page-footer__ident.page-footer__address Россиия #[br] Республика Башкортостан, Уфа, улица Менделеева, 130
+        .col-md-5.ml-a.page-footer__column
+          a.mail.page-footer__ident(href="mailto:info@mytandir.ru") info@mytandir.ru
+          a.phone.page-footer__ident(href="tel:88007755807") 8 800 77 55 807
+        .col-md-6.page-footer__column
           .social
             p.social__text Мы в социальных сетях:
             .social__list
@@ -27,9 +27,9 @@ mixin page-footer()
                   use(xlink:href="img/symbols.svg#youtube")
               a.social__item(href="#" aria-label="instagram")
                 svg(width="20" height="20")
-                use(xlink:href="img/symbols.svg#im")
-        .col-md-3
-          +btn("btn--width")
+                  use(xlink:href="img/symbols.svg#im")
+        .col-md-6.col-xl-3.page-footer__btn-column
+          +btn("btn--width page-footer__btn")
       .developer
         p.developer__text All Rights Reserved ©
         a.developer__logo(href="https://pplans.ru", target="_blank")

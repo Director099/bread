@@ -1,20 +1,94 @@
 .page-footer {
-  padding-top: 63px;
+  padding-top: 58px;
+  padding-bottom: 23px;
   background: #292929;
+
+  @media(min-width: $screen-md) {
+    padding-top: 65px;
+  }
+}
+
+.page-footer__row {
+  max-width: 290px;
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-bottom: 40px;
+
+  @media(min-width: $screen-md) {
+    max-width: 625px;
+    padding-bottom: 77px;
+  }
+
+  @media(min-width: $screen-xl) {
+    max-width: inherit;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 14px;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__ident {
+  margin-bottom: 22px;
+
+  @media(min-width: $screen-md) {
+    margin-bottom: 10px;
+  }
+}
+
+.page-footer__address {
+  padding-left: 38px;
+
+  @media(min-width: $screen-md) {
+    padding-left: 25px;
+    margin-bottom: 48px;
+  }
 }
 
 .page-footer__logo {
   display: block;
+  max-width: 120px;
   text-align: center;
-  margin: 0 auto;
-  padding-bottom: 70px;
+  margin: 0 auto 42px;
+  // padding-bottom: 70px;
   cursor: inherit;
+
+  @media(min-width: $screen-md) {
+    padding-bottom: 22px;
+    max-width: 100%;
+  }
 }
 
 .page-footer__mail {
-  margin-bottom: 9px;
+  margin-bottom: 22px;
 }
 
-.page-footer__row {
-  padding-bottom: 65px;
+.page-footer__btn-column {
+  display: none;
+
+  @media(min-width: $screen-md) {
+    display: block;
+    transform: translateX(20px);
+  }
+
+  @media(min-width: $screen-xl) {
+    display: block;
+    transform: translateX(0px);
+  }
+}
+
+.page-footer__column {
+  @include make-col-ready()
+
+  @media(min-width: $screen-xl) {
+    @include make-col(2.5);
+  }
+}
+
+.ml-a {
+  margin-left: auto;
+
+  @media(min-width: $screen-md) {
+    margin-left: inherit;
+  }
 }

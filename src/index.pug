@@ -265,14 +265,15 @@ block content
               p.calculator__total.calculator__total--rub Общая сумма инвестиций: #[strong 1 187 000]
               p.calculator__total Срок окупаемости: #[strong 8,5 мес]
             .calculator__profit
-              strong Чистая прибыль за месяц:
-              span 1 187 000
+              .calculator__profit-wrap
+                strong Чистая прибыль за месяц:
+                p #[span ≈] 1 187 000 #[sup / мес]
               small * Данные основаны на реальных отчетов действующих франчайзи с которыми вы можете ознакомиться.
             +btn('calculator__btn')
     .bg-content.opening
       .container
-        .row
-          section.col-md-6
+        .row.opening__row
+          section.col-xl-6
             h2.title.title--color.opening__title Стоимость открытия полноценной пекарни
             ul.price
               li.price__item
@@ -287,7 +288,7 @@ block content
             .block-info.opening__block-info
               em.block-info__ident * Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи
               em ** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.
-          .col-md-6
+          .col-xl-6
             section.pack-franchise
               h3.pack-franchise__title Пакет франшизы
               ul.pack-franchise__list
@@ -308,12 +309,12 @@ block content
                 li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
           .group-info
             +btn(
-              "btn--width"
+              "btn--width "
             )
             .document
               p.document__text Смотреть #[a(href="#") Лайт-формат]
               small (для помещений без посадочных мест)
-    .bg-content
+    //- .bg-content
       .container
         h2.title Еще сомневаетесь?
         p.tagline Работаем открыто — получите доступ к нашему чату, ключевым показателям, пообщайтесь с действующими франчайзи, посмотрите видео с мест открытия

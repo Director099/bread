@@ -1,11 +1,20 @@
 .document {
   color: $white;
-  margin-left: 57px;
+  margin: 42px 0 35px;
+
+  @media(min-width: $screen-xl) {
+    text-align: left;
+    margin-left: 57px;
+  }
 }
 
 .document__text {
   margin-bottom: 0px;
-  font: 700 12px/18px "Geometria", "Arial", sans-serif;
+  font: 700 14px/18px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-xl) {
+    margin-bottom: 10px;
+  }
 }
 
 .document__text a {
@@ -14,6 +23,11 @@
 }
 
 .document small {
-  color: #c0c0c0;
-  font: 400 11px/13px "Geometria", "Arial", sans-serif;
+  display: none;
+
+  @media(min-width: $screen-xl) {
+    display: block;
+    color: #c0c0c0;
+    font: 400 11px/13px "Geometria", "Arial", sans-serif;
+  }
 }

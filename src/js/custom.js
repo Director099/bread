@@ -96,12 +96,12 @@ $('input[type="range"]').rangeslider({
     onInit : function() {
       // console.log($('this.output'))
       var rangeLimit = $('.range__limit');
-      this.output = $( '<strong class="range-output" />' ).insertAfter( this.$range ).html( this.$element.val() );
+      // this.output = $( '<strong class="range-output" />' ).insertAfter( this.$range ).html( this.$element.val() );
       // rangeLimit.append(this.output[0])
     },
-    onSlide : function( position, value ) {
-        this.output.html( value );
-    }
+    // onSlide : function( position, value ) {
+    //     this.output.html( value );
+    // }
 });
 // Плавный скол с навигации
 

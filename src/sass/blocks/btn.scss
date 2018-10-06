@@ -13,18 +13,29 @@
   background-size: 30px, cover;
   background-repeat: no-repeat;
 
-  &--width {
-    max-width: 255px;
-    font-size: 12px;
-    line-height: 18px;
-    padding-left: 80px;
-    background-position: 25px 16px, center;
-  }
 
   @media (min-width: $screen-md) {
     font: 700 18px/25px "Geometria", "Arial", sans-serif;
     padding: 19px 40px 20px 110px;
     background-position: 45px 25px, center;
     background-size: 40px, cover;
+  }
+
+  &--width {
+    max-width: 255px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 80px;
+    background-size: 34px, cover;
+    background-position: 36px 16px, center;
+
+    @media(min-width: $screen-md) {
+      max-width: 255px;
+      font-size: 12px;
+      line-height: 18px;
+      padding: 16px 40px 15px 80px;
+      background-size: 34px, cover;
+      background-position: 36px 19px, center;
+    }
   }
 }

@@ -1,11 +1,25 @@
 .social {
+  // text-align: center;
+  max-width: 185px;
+  margin: 0 auto;
+
+  @media(min-width: $screen-md) {
+    margin-left: 26px;
+  }
+}
+
+.social__list {
 
 }
 
 .social__text {
   color: #fdf9ec;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   font: 400 14px/23px "Geometria", "Arial", sans-serif;
+
+  @media(min-width: $screen-xl) {
+    margin-bottom: 20px;
+  }
 }
 
 .social__item {

@@ -1,15 +1,43 @@
 .opening {
   // padding: 0;
   padding-top: 70px;
+  padding-bottom: 30px;
   background: url("../img/bg-opening.jpg") no-repeat center / cover;
+
+  @media(min-width: $screen-md) {
+    padding-top: 59px;
+    padding-bottom: 63px;
+  }
+
+  @media(min-width: $screen-xl) {
+    padding-top: 75px;
+    padding-bottom: 63px;
+  }
 }
 
 .opening__title {
   margin-bottom: 30px;
 
   @media(min-width: $screen-md) {
-    margin-bottom: 51px;
+    margin-bottom: 43px;
+    text-align: left;
+    padding-left: 84px;
+
+    &::after {
+      left: 0;
+      top: 39px;
+      transform: translateX(0%);
+    }
   }
+
+  @media(min-width: $screen-xl) {
+    padding-left: 0;
+    margin-bottom: 38px;
+  }
+}
+
+.opening__row {
+  position: relative;
 }
 
 .opening__block-info {

@@ -5,6 +5,8 @@
 
   @media(min-width: $screen-md) {
     text-align: left;
+    max-width: 529px;
+    margin: 0 auto 50px;
     width: 100%;
   }
 }
@@ -13,7 +15,7 @@
   margin-bottom: 10px;
 
   @media(min-width: $screen-md) {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 }
 
