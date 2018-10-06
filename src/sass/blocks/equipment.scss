@@ -6,26 +6,25 @@
   background-color: rgba($black, 0.6%);
   border-radius: $radius;
 
-  &--icon {
-    display: none;
-
-    @media (min-width: $screen-md) {
-      display: block;
-      background: transparent;
-      padding: 0;
-    }
-  }
-
   &--icon-1 {
     background-image: url("../img/icon/iso.png");
     background-repeat: no-repeat;
     background-position: 26px 31px;
+
+    @media(min-width: $screen-md) {
+      background-position: 41px 34px;
+      margin-right: 80px;
+    }
   }
 
   &--icon-2 {
     background-image: url("../img/icon/certificate.png");
     background-repeat: no-repeat;
     background-position: 40px 32px;
+
+    @media(min-width: $screen-md) {
+      margin-right: 80px;
+    }
   }
 
   &--icon-3 {
@@ -36,8 +35,18 @@
 
   @media(min-width: $screen-md) {
     max-width: 270px;
-    padding: 35px 28px 24px 43px;
+    padding: 101px 28px 24px 39px;
     min-height: 244px;
+  }
+
+  &--icon {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      background: transparent;
+      padding: 0;
+    }
   }
 }
 

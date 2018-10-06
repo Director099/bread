@@ -97,6 +97,7 @@
   line-height: 23px;
   color: #333333;
   transition: $time;
+  cursor: pointer;
 
   &--active {
     color: #c79216;

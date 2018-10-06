@@ -4,7 +4,12 @@
   background: url("../img/bg-equipment.jpg") no-repeat center / cover;
 
   @media(min-width: $screen-md) {
+    padding-top: 100px;
+  }
 
+  @media(min-width: $screen-xl) {
+    padding-top: 96px;
+    padding-bottom: 20px;
   }
 }
 
@@ -19,7 +24,8 @@
   }
 
   @media(min-width: $screen-md) {
-    margin-bottom: 78px;
+    margin-bottom: 68px;
+    text-align: left;
   }
 }
 
@@ -27,6 +33,26 @@
   margin-top: 8px;
 
   @media(min-width: $screen-md) {
-    margin-top: 65px;
+    margin-top: -38px;
+  }
+
+  @media(min-width: $screen-xl) {
+    margin-top: 55px;
+  }
+}
+
+.block-equipment__column-6-5 {
+  @include make-col-ready();
+
+  @media(min-width: $screen-xl) {
+    @include make-col(7.3);
+  }
+}
+
+.block-equipment__column-5-5 {
+  @include make-col-ready();
+
+  @media(min-width: $screen-xl) {
+    @include make-col(4.7);
   }
 }

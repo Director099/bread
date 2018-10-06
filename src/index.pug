@@ -191,8 +191,8 @@ block content
     .bg-content.block-equipment
       .container
         h2.title.title--color.block-equipment__title В пакете франшизы «хлеб из тандыра» запатентованное оборудование собственного производства
-        .row
-          .col-md-7
+        .row.block-equipment__row
+          .block-equipment__column-6-5
             .equipment-grid
               +equipment(
                 "",
@@ -216,7 +216,7 @@ block content
                 "Имеем все  сертификаты ЕАС на оборудование для СНГ и Европы",
                 "equipment-grid__ident equipment--icon-3"
               )
-          .col-md-5
+          .block-equipment__column-5-5
             .production.block-equipment__production
               p.production__text Производим ключевое оборудование, которое изготавливается потомственными гончарами, владеющими секретами производства печей и тандыров.
               ul.production__list
@@ -226,7 +226,7 @@ block content
                 li.production__item
                   strong Электрический глиняный тандыр
                   p габариты: 120х100 см
-              +btn()
+              +btn('production__btn')
     .bg-content.bg-calculator
       .container
         h2.title.title--center.bg-calculator__title Калькулятор экономических показателей
