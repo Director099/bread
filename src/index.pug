@@ -242,19 +242,19 @@ block content
             .tab-content(id="myTabContent")
               .tab-pane.fade.show.active(id="tab-1" role="tabpanel")
                 .range
-                  p.range__limit Затраты на открытие: #[strong]
+                  p.range__limit Затраты на открытие: #[strong.range__rub 235]
                   input(type="range" min="10" max="1000" step="10" value="300" data-rangeslider  role="input-range")
                   p.range__meanings
                     span мин.
                     span макс.
                 .range
-                  p.range__limit Длительность работы пекарни: #[strong]
+                  p.range__limit Длительность работы пекарни: #[strong 2 #[span месяца]]
                   input(type="range" min="20" max="221000" step="10" value="300" data-rangeslider  role="input-range")
                   p.range__meanings
                     span Открытие
                     span 1 год
                 .range
-                  p.range__limit Стоимость аренды помещения: #[strong]
+                  p.range__limit Стоимость аренды помещения: #[strong.range__rub 235]
                   input(type="range" min="1" max="100230" step="10" value="300" data-rangeslider  role="input-range")
                   p.range__meanings
                     span мин.
@@ -262,8 +262,8 @@ block content
               .tab-pane.fade.show.active(id="tab-2" role="tabpanel")
           .calculator__result
             .calculator__wrap-total
-              p.calculator__total.calculator__total--rub Общая сумма инвестиций: #[strong 1 187 000]
-              p.calculator__total Срок окупаемости: #[strong 8,5 мес]
+              p.calculator__total.calculator__total--rub #[span Общая сумма инвестиций:] #[strong 1 187 000]
+              p.calculator__total #[span Срок окупаемости:] #[strong 8,5 мес]
             .calculator__profit
               .calculator__profit-wrap
                 strong Чистая прибыль за месяц:
@@ -314,7 +314,7 @@ block content
             .document
               p.document__text Смотреть #[a(href="#") Лайт-формат]
               small (для помещений без посадочных мест)
-    //- .bg-content
+    .bg-content
       .container
         h2.title Еще сомневаетесь?
         p.tagline Работаем открыто — получите доступ к нашему чату, ключевым показателям, пообщайтесь с действующими франчайзи, посмотрите видео с мест открытия

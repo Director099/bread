@@ -6091,15 +6091,15 @@ main {
   .result__item--block-1 {
     width: 100%;
     border-radius: 10px;
-    background: rgba(41, 28, 17, 0.55); }
+    background: rgba(54, 36, 22, 0.9); }
   .result__item--block-2 {
     width: 100%;
     border-radius: 10px;
-    background: rgba(69, 52, 50, 0.56); }
+    background: rgba(74, 55, 47, 0.9); }
   .result__item--block-3 {
     width: 100%;
     border-radius: 10px;
-    background: rgba(199, 146, 22, 0.56); }
+    background: rgba(157, 116, 0, 0.56); }
 
 .result__item strong {
   display: block;
@@ -6198,17 +6198,19 @@ main {
   width: 100%;
   padding: 22px 28px 24px 102px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 15px; }
   .equipment--icon-1 {
+    background-color: rgba(94, 75, 59, 0.9);
     background-image: url("../img/icon/iso.png");
     background-repeat: no-repeat;
     background-position: 26px 31px; }
   .equipment--icon-2 {
+    background-color: rgba(66, 53, 42, 0.9);
     background-image: url("../img/icon/certificate.png");
     background-repeat: no-repeat;
     background-position: 40px 32px; }
   .equipment--icon-3 {
+    background-color: rgba(87, 61, 41, 0.9);
     background-image: url("../img/icon/waranty.png");
     background-repeat: no-repeat;
     background-position: 40px 32px; }
@@ -6270,7 +6272,7 @@ main {
 
 .pack-franchise {
   padding: 23px 10px 15px 14px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(51, 38, 35, 0.9);
   color: white;
   border-radius: 10px; }
 
@@ -6307,7 +6309,8 @@ main {
 .opening {
   padding-top: 70px;
   padding-bottom: 30px;
-  background: url("../img/bg-opening.jpg") no-repeat center/cover; }
+  background: url("../img/bg-opening.jpg") no-repeat center/cover;
+  overflow: hidden; }
 
 .opening__title {
   margin-bottom: 30px; }
@@ -6652,15 +6655,21 @@ main {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 33px; }
+  .calculator__total--rub strong {
+    padding-right: 20px;
+    background: url("../img/sprite/ruble-color-2.svg") no-repeat 100% 7px/15px; }
 
 .calculator__total strong {
-  display: block;
+  display: inline-block;
   margin-top: 10px;
   color: #24110c;
   font-family: "UniNeue", "Arial", sans-serif;
   font-size: 21px;
   line-height: 27px;
   font-weight: 700; }
+
+.calculator__total span {
+  display: block; }
 
 .calculator__result {
   position: relative;
@@ -6762,6 +6771,19 @@ main {
 
 .range__limit {
   margin-bottom: 17px; }
+
+.range__limit strong {
+  position: relative;
+  text-decoration: underline; }
+
+.range__rub::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -25px;
+  width: 20px;
+  height: 15px;
+  background: url("../img/sprite/ruble-black.svg") no-repeat; }
 
 .gallery {
   position: relative;
@@ -8393,6 +8415,8 @@ main {
   .calculator__total {
     font-size: 18px;
     margin-bottom: 70px; }
+  .calculator__total--rub strong {
+    background: url("../img/sprite/ruble-color-2.svg") no-repeat 103% 5px/19px; }
   .calculator__total strong {
     font-size: 27px; }
   .calculator__result {
@@ -9425,7 +9449,7 @@ main {
   .dignity {
     max-width: 100%;
     margin-top: -77px;
-    margin-left: -20px;
+    margin-left: -29px;
     margin-bottom: 0; }
   .dignity__item {
     padding-left: 45px;

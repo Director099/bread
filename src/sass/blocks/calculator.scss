@@ -166,10 +166,21 @@
   @media(min-width: $screen-xl) {
     margin-bottom: 62px;
   }
+
+  &--rub {
+    strong {
+      padding-right: 20px;
+      background: url("../img/sprite/ruble-color-2.svg") no-repeat 100% 7px/15px;
+
+      @media(min-width: $screen-md) {
+        background: url("../img/sprite/ruble-color-2.svg") no-repeat 103% 5px/19px;
+      }
+    }
+  }
 }
 
 .calculator__total strong {
-  display: block;
+  display: inline-block;
   margin-top: 10px;
   color: #24110c;
   font-family: "UniNeue", "Arial", sans-serif;
@@ -181,6 +192,15 @@
     font-size: 27px;
   }
 }
+
+.calculator__total span {
+  display: block;
+}
+
+// .calculator__total--rub strong {
+//   display: inline-block;
+//   padding-right: 20px;
+// }
 
 .calculator__result {
   position: relative;

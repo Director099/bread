@@ -3,6 +3,7 @@
   padding-top: 70px;
   padding-bottom: 30px;
   background: url("../img/bg-opening.jpg") no-repeat center / cover;
+  overflow: hidden;
 
   @media(min-width: $screen-md) {
     padding-top: 59px;

@@ -78,10 +78,26 @@
 }
 
 .range__limit {
+
   margin-bottom: 17px;
 
   @media(min-width: $screen-md) {
     margin-bottom: 33px;
     font-size: 18px;
   }
+}
+
+.range__limit strong {
+  position: relative;
+  text-decoration: underline;
+}
+
+.range__rub::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -25px;
+  width: 20px;
+  height: 15px;
+  background: url("../img/sprite/ruble-black.svg") no-repeat;
 }
