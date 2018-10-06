@@ -2,23 +2,49 @@
 
 }
 
+.communion__row {
+  @include make-row();
+  display: none;
+
+  @media(min-width: $screen-xl) {
+    display: flex;
+  }
+}
+
+.communion__mob {
+  @media(min-width: $screen-xl) {
+    display: none;
+  }
+}
 .communion__content {
   margin-top: 60px;
 }
 
 .communion__title {
-  font-size: 27px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
   font-weight: 700;
-  line-height: 40px;
   margin-bottom: 34px;
   color: #333333;
+
+  @media(min-width: $screen-md) {
+    font-size: 27px;
+    line-height: 40px;
+  }
 }
 
 .communion__text {
+  text-align: center;
   color: #333333;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 18px;
+
+  @media(min-width: $screen-md) {
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
 
 .communion__number {
@@ -30,7 +56,9 @@
 }
 
 .communion__slider {
-  padding: 0 60px;
+  @media(min-width: $screen-xl) {
+    padding: 0 60px;
+  }
 }
 
 .communion__slider .owl-nav {
@@ -45,13 +73,18 @@
   background-color: #c79216 !important;
   color: $white !important;
   font-size: 23px;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 
   span {
     font-size: 34px;
     line-height: 20px;
+  }
+
+  @media(min-width: $screen-md) {
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -63,12 +96,17 @@
   background-color: #c79216 !important;
   color: $white !important;
   font-size: 23px;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 
   span {
     font-size: 34px;
     line-height: 20px;
+  }
+
+  @media(min-width: $screen-md) {
+    width: 48px;
+    height: 48px;
   }
 }

@@ -6512,27 +6512,33 @@ main {
     font-size: 12px;
     line-height: 12px; }
 
+.communion__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  display: none; }
+
 .communion__content {
   margin-top: 60px; }
 
 .communion__title {
-  font-size: 27px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
   font-weight: 700;
-  line-height: 40px;
   margin-bottom: 34px;
   color: #333333; }
 
 .communion__text {
+  text-align: center;
   color: #333333;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 27px; }
+  line-height: 18px; }
 
 .communion__number {
   margin-bottom: 10px; }
-
-.communion__slider {
-  padding: 0 60px; }
 
 .communion__slider .owl-nav {
   margin: 0; }
@@ -6545,8 +6551,8 @@ main {
   background-color: #c79216 !important;
   color: white !important;
   font-size: 23px;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%; }
   .communion__slider .owl-nav .owl-prev span {
     font-size: 34px;
@@ -6560,8 +6566,8 @@ main {
   background-color: #c79216 !important;
   color: white !important;
   font-size: 23px;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%; }
   .communion__slider .owl-nav .owl-next span {
     font-size: 34px;
@@ -8381,6 +8387,18 @@ main {
     padding-left: 62px;
     background: url("../img/icon/wreath.png") no-repeat 6px 50%;
     font: 700 16px/25px "Geometria", "Arial", sans-serif; }
+  .communion__title {
+    font-size: 27px;
+    line-height: 40px; }
+  .communion__text {
+    font-size: 16px;
+    line-height: 27px; }
+  .communion__slider .owl-nav .owl-prev {
+    width: 48px;
+    height: 48px; }
+  .communion__slider .owl-nav .owl-next {
+    width: 48px;
+    height: 48px; }
   .calculator {
     margin-top: 72px; }
   .calculator__choice {
@@ -9591,8 +9609,14 @@ main {
   .nominations__item {
     padding-left: 66px;
     background: url("../img/icon/wreath.png") no-repeat 10px 50%; }
+  .communion__row {
+    display: flex; }
+  .communion__mob {
+    display: none; }
   .communion__number {
     margin-bottom: 37px; }
+  .communion__slider {
+    padding: 0 60px; }
   .number-step {
     text-align: left;
     font-size: 48px;

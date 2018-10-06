@@ -57,8 +57,13 @@ $('.communion__slider').owlCarousel({
     loop:true,
     nav:true,
     dots: false,
-    animateOut: 'fadeOut',
-    items: 2
+    autoHeight: true,
+    items: 1,
+    responsive: {
+      1170: {
+        animateOut: 'fadeOut'
+      }
+    }
 })
 
 $('.gallery').owlCarousel({
