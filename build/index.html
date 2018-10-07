@@ -1,5 +1,4 @@
-
-<!-- data-toggle="modal", data-target="#exampleModal"--><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -166,7 +165,7 @@
               <div class="block-cheaf"><small class="block-cheaf__clar">Управляющий и собственник пекарни</small><strong class="block-cheaf__name">Виктория Богданова</strong>
                 <p>Выпускник и резидент Сколково, ученица кулинарной школы Ле Кордон Блю в Париже и Лондоне</p>
               </div>
-              <button class="btn">Получить подробную финансовую модель</button>
+              <button class="btn" data-toggle="modal" data-target="#exampleModal">Получить подробную финансовую модель</button>
             </div>
           </div>
         </section>
@@ -242,7 +241,7 @@
                     <p>габариты: 120х100 см</p>
                   </li>
                 </ul>
-                <button class="btn production__btn">Получить подробную финансовую модель</button>
+                <button class="btn production__btn" data-toggle="modal" data-target="#exampleModal">Получить подробную финансовую модель</button>
               </div>
             </div>
           </div>
@@ -291,7 +290,7 @@
                   <p><span>≈</span> 1 187 000 <sup>/ мес</sup></p>
                 </div><small>* Данные основаны на реальных отчетов действующих франчайзи с которыми вы можете ознакомиться.</small>
               </div>
-              <button class="btn calculator__btn">Получить подробную финансовую модель</button>
+              <button class="btn calculator__btn" data-toggle="modal" data-target="#exampleModal">Получить подробную финансовую модель</button>
             </div>
           </div>
         </div>
@@ -329,7 +328,7 @@
               </section>
             </div>
             <div class="group-info">
-              <button class="btn btn--width ">Получить подробную финансовую модель</button>
+              <button class="btn btn--width " data-toggle="modal" data-target="#exampleModal">Получить подробную финансовую модель</button>
               <div class="document">
                 <p class="document__text">Смотреть <a href="#">Лайт-формат</a></p><small>(для помещений без посадочных мест)</small>
               </div>
@@ -434,7 +433,7 @@
             </div>
           </div>
           <div class="col-md-6 col-xl-3 page-footer__btn-column">
-            <button class="btn btn--width page-footer__btn">Получить подробную финансовую модель</button>
+            <button class="btn btn--width page-footer__btn" data-toggle="modal" data-target="#exampleModal">Получить подробную финансовую модель</button>
           </div>
         </div>
         <div class="developer">
@@ -445,15 +444,15 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
-          <h4>Оставьте заявку на получение презентации о франшизе,и получите подробную финансовую модель открытия пекарни</h4>
-          <button type="button" data-dismiss="modal" aria-label="Close"></button>
-          <form>
-            <input type="tel" placeholder="+1 234 567 890"/>
-            <input type="email" placeholder="Your e-mail"/>
-            <button class="btn">Оправить заявку</button>
+          <h4 class="modal-content__title">Оставьте заявку на получение презентации о франшизе,и получите подробную финансовую модель открытия пекарни</h4>
+          <button class="modal-content__close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <form class="modal-content__form">
+            <input class="modal-content__ident form-input form-input--phone" type="tel" placeholder="+1 234 567 890"/>
+            <input class="modal-content__ident form-input form-input--mail" type="email" placeholder="Your e-mail"/>
+            <button class="btn-form modal-content__btn">Оправить заявку</button>
             <div class="form-checkbox">
-              <input type="checkbox"/>
-              <label>Заполняя форму, Вы соглашаетесь с политикой конфиденциальности</label>
+              <input class="form-checkbox__input" type="checkbox" id="check-1"/>
+              <label class="form-checkbox__text" for="check-1">Заполняя форму, Вы соглашаетесь с политикой конфиденциальности</label>
             </div>
           </form>
         </div>

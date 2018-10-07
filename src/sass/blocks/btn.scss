@@ -39,3 +39,20 @@
     }
   }
 }
+
+.btn-form {
+  display: block;
+  width: 100%;
+  padding: 16px 12px 14px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  font: 700 14px/20px "Geometria", "Arial", sans-serif;
+  background: linear-gradient(to bottom, #ffe25b 0%, #c79216 100%);
+  box-shadow: 0 5px 0 #9f7813;
+
+  @media(min-width: $screen-md) {
+    font: 700 18px/25px "Geometria", "Arial", sans-serif;
+
+  }
+}

@@ -37,12 +37,12 @@ mixin page-footer()
   .modal.fade(id="exampleModal" tabindex="-1" role="dialog")
     .modal-dialog
       .modal-content
-        h4 Оставьте заявку на получение презентации о франшизе,и получите подробную финансовую модель открытия пекарни
-        button(type="button" data-dismiss="modal" aria-label="Close")
-        form
-          input(type="tel", placeholder="+1 234 567 890")
-          input(type="email", placeholder="Your e-mail")
-          button.btn Оправить заявку
+        h4.modal-content__title Оставьте заявку на получение презентации о франшизе,и получите подробную финансовую модель открытия пекарни
+        button.modal-content__close(type="button" data-dismiss="modal" aria-label="Close")
+        form.modal-content__form
+          input.modal-content__ident.form-input.form-input--phone(type="tel", placeholder="+1 234 567 890")
+          input.modal-content__ident.form-input.form-input--mail(type="email", placeholder="Your e-mail")
+          button.btn-form.modal-content__btn Оправить заявку
           .form-checkbox
-            input(type="checkbox")
-            label Заполняя форму, Вы соглашаетесь с политикой конфиденциальности
+            input.form-checkbox__input(type="checkbox" id="check-1")
+            label.form-checkbox__text(for="check-1") Заполняя форму, Вы соглашаетесь с политикой конфиденциальности
