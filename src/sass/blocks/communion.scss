@@ -1,5 +1,7 @@
 .communion {
-
+  @media(min-width: $screen-xl) {
+    margin-bottom: 25px;
+  }
 }
 
 .communion__row {
@@ -12,12 +14,19 @@
 }
 
 .communion__mob {
+  margin-bottom: 27px;
+
+  @media(min-width: $screen-md) {
+    margin-bottom: 45px;
+  }
+
   @media(min-width: $screen-xl) {
     display: none;
   }
 }
 .communion__content {
-  margin-top: 60px;
+  margin-top: 82px;
+  margin-left: 98px;
 }
 
 .communion__title {
@@ -29,8 +38,15 @@
   color: #333333;
 
   @media(min-width: $screen-md) {
+    max-width: 430px;
+    margin: 0 auto 34px;
     font-size: 27px;
     line-height: 40px;
+  }
+
+  @media(min-width: $screen-xl) {
+    text-align: left;
+    margin-bottom: 24px;
   }
 }
 
@@ -45,13 +61,17 @@
     font-size: 16px;
     line-height: 27px;
   }
+
+   @media(min-width: $screen-xl) {
+    text-align: left;
+  }
 }
 
 .communion__number {
   margin-bottom: 10px;
 
   @media(min-width: $screen-xl) {
-    margin-bottom: 37px;
+    margin-bottom: 25px;
   }
 }
 

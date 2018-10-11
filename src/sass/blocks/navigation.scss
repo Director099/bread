@@ -1,40 +1,67 @@
 .navigation {
   position: absolute;
-  right: 0;
+  right: -50px;
   top: 0;
-  display: none;
+  width: 50px;
+  z-index: 1;
+  transition: $time;
 
-  &--active {
-    &::after {
-      width: 674px;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -42px;
+    // background-color: rgba(215, 206, 183, 0.18);
+    background: url("../img/blur/blur-menu.png") repeat top;
+    width: 50px;
+    height: 100vh;
+    min-height: 796px;
+    z-index: -1;
+    transition: $time;
+  }
+
+  @media(min-width: $screen-md) {
+    right: -100%;
   }
 
   @media(min-width: $screen-xl) {
+    right: 0px;
+
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      top: -30px;
-      background-color: rgba(215, 206, 183, 0.18);
+      top: -42px;
+      // background-color: rgba(215, 206, 183, 0.18);
+      background: url("../img/blur/blur-menu.png") repeat top;
       width: 50px;
       height: 100vh;
       min-height: 796px;
       z-index: -1;
       transition: $time;
     }
-
     &::before {
       content: "";
       position: absolute;
       right: -1400px;
-      top: -30px;
+      top: -42px;
       background-color: rgba(215, 206, 183, 0.18);
+      filter: blur(10px);
+      background: url("../img/blur/blur-menu.png") repeat center;
       width: 1400px;
       height: 100vh;
       min-height: 796px;
       z-index: -1;
       transition: $time;
+    }
+  }
+
+  &--active {
+    width: auto;
+    right: 0;
+
+    &::after {
+      width: 430px;
     }
   }
 }
@@ -50,20 +77,29 @@
 .navigation__list {
   @include ul-none();
   text-align: right;
-  margin-top: 100px;
-  padding-right: 90px;
+  margin-top: 70px;
+  padding-right: 100px;
   transform: translateX(100vw);
   transition: $time;
 
   &--active {
     transform: translateX(0vw);
   }
+
+  @media(min-width: $screen-md) {
+    margin-top: 100px;
+    padding-right: 90px;
+  }
 }
 
 .navigation__link {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: $white;
+
+  @media(min-width: $screen-md) {
+    font-size: 18px;
+  }
 
   &--active {
     color: #ffbd00;
@@ -82,7 +118,12 @@
   width: 15px;
   height: 15px;
   border: none;
+  z-index: 2;
   background: transparent url("../img/sprite/menu.svg") no-repeat center / cover;
+
+  &--active {
+    background: transparent url("../img/sprite/close-white.svg") no-repeat center / cover;
+  }
 
   @media(min-width: $screen-md) {
     right: 15px;

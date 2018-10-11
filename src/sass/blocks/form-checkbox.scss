@@ -16,6 +16,10 @@
   cursor: pointer;
   margin-bottom: 0;
 
+  &--color {
+    color: $white;
+  }
+
   &::after {
     content: "";
     position: absolute;

@@ -1,5 +1,5 @@
 .tagline {
-  font: 400 10px/21px "Geometria", "Arial", sans-serif;
+  font: 400 10px/17px "Geometria", "Arial", sans-serif;
   color: #513e37;
   text-align: center;
 
@@ -16,5 +16,19 @@
   @media (min-width: $screen-xl) {
     text-align: left;
     margin-bottom: 46px;
+  }
+
+  &--size-md {
+    @media (min-width: $screen-md) {
+      max-width: 520px;
+      margin: -8px auto 35px;
+      font: 400 16px/25px "Geometria", "Arial", sans-serif;
+    }
+
+    @media (min-width: $screen-xl) {
+      max-width: 890px;
+      margin: 0px 0px 35px;
+      font: 400 21px/32px "Geometria", "Arial", sans-serif;
+    }
   }
 }

@@ -10,9 +10,11 @@
 }
 
 .result__item {
+  position: relative;
   width: 100%;
   padding: 23px 26px 26px 23px;
   margin-bottom: 18px;
+  z-index: 1;
 
 
   @media (min-width: $screen-md) {
@@ -28,7 +30,12 @@
   &--block-1 {
     width: 100%;
     border-radius: 10px;
-    background: rgba(#362416, 0.9%);
+
+    &::after {
+      content: "";
+      @include blur();
+      background: url("../img/blur/result-1.png") no-repeat center / cover;
+    }
 
     @media (min-width: $screen-md) {
       border-radius: 10px 0 0 10px;
@@ -39,7 +46,12 @@
   &--block-2 {
     width: 100%;
     border-radius: 10px;
-    background: rgba(#4a372f, 0.9%);
+
+    &::after {
+      content: "";
+      @include blur();
+      background: url("../img/blur/result-2.png") no-repeat center / cover;
+    }
 
     @media (min-width: $screen-md) {
       width: 50%;
@@ -56,7 +68,12 @@
   &--block-3 {
     width: 100%;
     border-radius: 10px;
-    background: rgba(#9d7400, 0.56%);
+
+    &::after {
+      content: "";
+      @include blur();
+      background: url("../img/blur/result-3.png") no-repeat center / cover;
+    }
 
     @media (min-width: $screen-md) {
       width: 50%;

@@ -1,28 +1,32 @@
 .equipment {
+  position: relative;
   min-height: 134px;
   width: 100%;
   padding: 22px 28px 24px 102px;
   color: $white;
-  // background-color: rgba($black, 0.6%);
+  z-index: 1;
   border-radius: $radius;
 
   &--icon-1 {
-    background-color: rgba(#5e4b3b, 0.9%);
-    background-image: url("../img/icon/iso.png");
+    background-image: url("../img/icon/iso.png"), url("../img/blur/equmpt-1.png");
     background-repeat: no-repeat;
-    background-position: 26px 31px;
+    background-position: 26px 31px, center;
+    background-size: auto, cover;
+    z-index: 2;
 
     @media(min-width: $screen-md) {
-      background-position: 41px 34px;
+      background-position: 41px 34px, center;
       margin-right: 80px;
     }
   }
 
   &--icon-2 {
     background-color: rgba(#42352a, 0.9%);
-    background-image: url("../img/icon/certificate.png");
+    background-image: url("../img/icon/certificate.png"), url("../img/blur/equmpt-2.png");
     background-repeat: no-repeat;
-    background-position: 40px 32px;
+    background-position: 40px 32px, center;
+    background-size: auto, cover;
+    z-index: 2;
 
     @media(min-width: $screen-md) {
       margin-right: 80px;
@@ -31,9 +35,11 @@
 
   &--icon-3 {
     background-color: rgba(#573d29, 0.9%);
-    background-image: url("../img/icon/waranty.png");
+    background-image: url("../img/icon/waranty.png"), url("../img/blur/equmpt-3.png");
     background-repeat: no-repeat;
-    background-position: 40px 32px;
+    background-position: 40px 32px, center;
+    background-size: auto, cover;
+    z-index: 2;
   }
 
   @media(min-width: $screen-md) {

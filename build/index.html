@@ -40,12 +40,12 @@
               <li class="navigation__item"><a class="navigation__link" href="#">Доказательства</a></li>
             </ul>
             <form class="form-callback">
-              <h3 class="title title--size title--color form-callback__title">Специалист свяжется с вамив течении 30 минут</h3>
-              <input type="tel" placeholder="+1 234 567 890"/>
-              <button class="form-callback_btn">Заказать звонок</button>
+              <h3 class="form-callback__title">Специалист свяжется с вамив течении 30 минут</h3>
+              <input class="form-input form-input--phone form-callback__ident" type="tel" placeholder="+1 234 567 890"/>
+              <button class="form-callback_btn form-callback__ident">Заказать звонок</button>
               <div class="form-checkbox">
-                <input type="checkbox"/>
-                <label>Заполняя форму, Вы соглашаетесь с политикой конфиденциальности</label>
+                <input class="form-checkbox__input" type="checkbox" id="check-2" checked="checked"/>
+                <label class="form-checkbox__text form-checkbox__text--color" for="check-2">Заполняя форму, Вы соглашаетесь с политикой конфиденциальности</label>
               </div>
             </form>
           </nav>
@@ -102,8 +102,7 @@
               </ul>
             </div>
             <section class="about-us__column about-us__column-ident about-us__column-7"><a class="video-img" data-fancybox href="https://www.youtube.com/watch?v=__Tk4WIvh2Y">
-                <div class="video-img__wrap">
-                  <button class="video-img__play" aria-label="Просмотр видео"></button>
+                <div class="video-img__wrap"><span class="video-img__play" aria-label="Просмотр видео"></span>
                   <p class="video-img__text">Просмотр видео о франшизе</p>
                 </div></a></section>
           </div>
@@ -336,10 +335,10 @@
           </div>
         </div>
       </div>
-      <div class="bg-content">
+      <div class="bg-content bg-content--pattern">
         <div class="container">
           <h2 class="title">Еще сомневаетесь?</h2>
-          <p class="tagline">Работаем открыто — получите доступ к нашему чату, ключевым показателям, пообщайтесь с действующими франчайзи, посмотрите видео с мест открытия</p>
+          <p class="tagline tagline--size-md">Работаем открыто — получите доступ к нашему чату, ключевым показателям, пообщайтесь с действующими франчайзи, посмотрите видео с мест открытия</p>
           <div class="communion">
             <div class="communion__row">
               <div class="col-md-7">
@@ -451,7 +450,7 @@
             <input class="modal-content__ident form-input form-input--mail" type="email" placeholder="Your e-mail"/>
             <button class="btn-form modal-content__btn">Оправить заявку</button>
             <div class="form-checkbox">
-              <input class="form-checkbox__input" type="checkbox" id="check-1"/>
+              <input class="form-checkbox__input" type="checkbox" id="check-1" checked="checked"/>
               <label class="form-checkbox__text" for="check-1">Заполняя форму, Вы соглашаетесь с политикой конфиденциальности</label>
             </div>
           </form>

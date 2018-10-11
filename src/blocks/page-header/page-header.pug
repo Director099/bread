@@ -27,9 +27,9 @@ mixin page-header()
         li.navigation__item
           a.navigation__link(href="#") Доказательства
       form.form-callback
-        h3.title.title--size.title--color.form-callback__title Специалист свяжется с вамив течении 30 минут
-        input(type="tel" placeholder="+1 234 567 890")
-        button.form-callback_btn Заказать звонок
+        h3.form-callback__title Специалист свяжется с вамив течении 30 минут
+        input.form-input.form-input--phone.form-callback__ident(type="tel" placeholder="+1 234 567 890")
+        button.form-callback_btn.form-callback__ident Заказать звонок
         .form-checkbox
-          input(type="checkbox")
-          label Заполняя форму, Вы соглашаетесь с политикой конфиденциальности
+          input.form-checkbox__input(type="checkbox" id="check-2" checked)
+          label.form-checkbox__text.form-checkbox__text--color(for="check-2") Заполняя форму, Вы соглашаетесь с политикой конфиденциальности

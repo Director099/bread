@@ -887,11 +887,17 @@ $('input[type="range"]').rangeslider({
 });
 // Плавный скол с навигации
 
-/* $(".scrollto > a").click(function () {
+ $(".scrollto > a").click(function () {
   var elementClick = $(this).attr("href")
   var destination = $(elementClick).offset().top;
   jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
   return false;
-}); */
+});
 
 // Плавный скол с навигации
+
+$(".navigation__btn").on("click", function() {
+  $(".navigation__btn").toggleClass("navigation__btn--active");
+  $(".navigation").toggleClass("navigation--active");
+  $(".navigation__list").toggleClass("navigation__list--active");
+})

@@ -1,6 +1,8 @@
 .pack-franchise {
+  position: relative;
   padding: 23px 10px 15px 14px;
-  background: rgba(#332623, 0.9%);
+  // background: rgba(#332623, 0.9%);
+  background: url("../img/blur/blur-franchize.png") no-repeat center / cover;
   color: $white;
   border-radius: 10px;
 

@@ -1,16 +1,28 @@
 .step {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   @include ul-none();
+
+  @media(min-width: $screen-md) {
+    margin-left: -35px;
+    margin-right: -35px;
+  }
+
+  @media(min-width: $screen-xl) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .step__item {
+  flex: 1 0;
   max-width: 230px;
-  padding: 25px 21px 30px 25px;
+  padding: 6px 10px;
   background-color: #e9e2cb;
   font-weight: 300;
   color: #333333;
+  border-right: 3px solid #fdf9ee;
   cursor: pointer;
 
   &--active {
@@ -25,21 +37,47 @@
 
   &:last-child {
     border-radius: 0 10px 10px 0;
+    border-right: none;
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: inherit;
+    padding: 23px 10px 23px 20px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 23px 21px 27px 19px;
   }
 }
 
 .step__item p {
+  display: none;
   margin: 0;
   font-size: 12px;
   line-height: 18px;
+
+  @media (min-width: $screen-md) {
+    display: block;
+    margin: 0;
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $screen-xl ) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.step__item--active p {
+  font-weight: 700;
 }
 
 .step__item span {
   position: relative;
   display: block;
   padding-left: 15px;
-  margin-bottom: 18px;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 21px;
 
   &::after {
@@ -49,5 +87,11 @@
     top: 2px;
     font-size: 12px;
     line-height: 12px;
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 13px;
   }
 }
