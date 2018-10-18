@@ -6,19 +6,19 @@
   z-index: 1;
   transition: $time;
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: -42px;
-    // background-color: rgba(215, 206, 183, 0.18);
-    background: url("../img/blur/blur-menu.png") repeat top;
-    width: 50px;
-    height: 100vh;
-    min-height: 796px;
-    z-index: -1;
-    transition: $time;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   right: 0;
+  //   top: -42px;
+  //   // background-color: rgba(215, 206, 183, 0.18);
+  //   background: url("../img/blur/blur-menu.png") repeat top;
+  //   width: 50px;
+  //   height: 100vh;
+  //   min-height: 796px;
+  //   z-index: -1;
+  //   transition: $time;
+  // }
 
   @media(min-width: $screen-md) {
     right: -100%;
@@ -27,33 +27,33 @@
   @media(min-width: $screen-xl) {
     right: 0px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: -42px;
-      // background-color: rgba(215, 206, 183, 0.18);
-      background: url("../img/blur/blur-menu.png") repeat top;
-      width: 50px;
-      height: 100vh;
-      min-height: 796px;
-      z-index: -1;
-      transition: $time;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      right: -1400px;
-      top: -42px;
-      background-color: rgba(215, 206, 183, 0.18);
-      filter: blur(10px);
-      background: url("../img/blur/blur-menu.png") repeat center;
-      width: 1400px;
-      height: 100vh;
-      min-height: 796px;
-      z-index: -1;
-      transition: $time;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   right: 0;
+    //   top: -42px;
+    //   // background-color: rgba(215, 206, 183, 0.18);
+    //   background: url("../img/blur/blur-menu.png") repeat top;
+    //   width: 50px;
+    //   height: 100vh;
+    //   min-height: 796px;
+    //   z-index: -1;
+    //   transition: $time;
+    // }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   right: -1400px;
+    //   top: -42px;
+    //   background-color: rgba(215, 206, 183, 0.18);
+    //   filter: blur(10px);
+    //   background: url("../img/blur/blur-menu.png") repeat center;
+    //   width: 1400px;
+    //   height: 100vh;
+    //   min-height: 796px;
+    //   z-index: -1;
+    //   transition: $time;
+    // }
   }
 
   &--active {

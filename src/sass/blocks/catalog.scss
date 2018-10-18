@@ -119,6 +119,7 @@
   height: 30px;
   border: none;
   border-radius: 50%;
+  z-index: 9;
   background: #c79216 url("../img/sprite/arrow-back.svg") no-repeat 45% 50% /15px;
 
   @media(min-width: $screen-md) {

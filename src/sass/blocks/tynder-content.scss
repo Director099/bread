@@ -4,14 +4,23 @@
 
 .tynder-content__dot {
   position: absolute;
+  padding: 0;
   width: 40px;
   height: 40px;
   border: none;
+  border-radius: 50%;
+  transition: $time;
+  box-shadow: 0 0 0px 0 rgba($color-warning, 0.3%);
   background: url("../img/circle-white.png") no-repeat center / contain;
 
   @media(min-width: $screen-md) {
     width: 50px;
     height: 50px;
+  }
+
+  &--active {
+    box-shadow: 0 0 50px 0 rgba($color-warning, 0.3%);
+    background: url("../img/circle-yellow.png") no-repeat center / contain;
   }
 }
 

@@ -1,3 +1,16 @@
+@mixin mont() {
+  position: absolute;
+  right: -35px;
+  bottom: 54px;
+  transform: rotate(-90deg) translateY(100%);
+  font: 700 30px/30px "UniNeue", "Arial", sans-serif;
+
+  @media (min-width: $screen-md) {
+    bottom: 77px;
+    font: 700 40px/40px "UniNeue", "Arial", sans-serif;
+  }
+}
+
 .number-entre {
   position: relative;
   max-width: 320px;
@@ -59,5 +72,24 @@
     left: 0;
     bottom: -45px;
     font: 700 200px/200px "UniNeue", "Arial", sans-serif;
+  }
+
+  &--mont {
+    &::after {
+      content: "месяц";
+      @include mont()
+    }
+  }
+
+  &--monts {
+    bottom: -22px;
+
+    @media (min-width: $screen-md) {
+      bottom: -34px;
+    }
+    &::after {
+      content: "месяца";
+      @include mont();
+    }
   }
 }

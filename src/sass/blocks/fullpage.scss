@@ -1,3 +1,8 @@
+@mixin fullpage() {
+  height: 100vh;
+  min-height: 796px;
+}
+
 .fullpage {
   overflow: hidden;
   // &::after {
@@ -42,8 +47,7 @@
   }
 
   @media (min-width: $screen-xl) {
-    // height: 100vh;
-    min-height: 796px;
+    @include fullpage();
   }
 }
 
@@ -66,8 +70,7 @@
   }
 
   @media (min-width: $screen-xl) {
-    // height: 100vh;
-    min-height: 796px;
+    @include fullpage();
   }
 }
 

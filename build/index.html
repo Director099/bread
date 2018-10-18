@@ -151,10 +151,10 @@
             </li>
           </ul>
           <div class="tynder-content">
-            <button class="tynder-content__dot tynder-content__dot-1 tynder-content__dot--active" aria-label="Точки для появления текста Тандера"></button>
-            <button class="tynder-content__dot tynder-content__dot-2" aria-label="Точки для появления текста Тандера"></button>
-            <button class="tynder-content__dot tynder-content__dot-3" aria-label="Точки для появления текста Тандера"></button>
-            <button class="tynder-content__dot tynder-content__dot-4" aria-label="Точки для появления текста Тандера"></button>
+            <button class="tynder-content__dot tynder-content__dot-1 tynder-content__dot--active" aria-label="Точки для появления текста Тандера" data-text="Предпринимателя из России, Европы и СНГ присоединились к франшизе" data-number="94"></button>
+            <button class="tynder-content__dot tynder-content__dot-2" aria-label="Точки для появления текста Тандера" data-text="Среднее время открытия  одной тандырной пекарни" data-number="1"></button>
+            <button class="tynder-content__dot tynder-content__dot-3" aria-label="Точки для появления текста Тандера" data-text="Сотрудников в управляющей компании работают на запуск и обслуживание франчайз" data-number="10"></button>
+            <button class="tynder-content__dot tynder-content__dot-4" aria-label="Точки для появления текста Тандера" data-text="Средний срок выхода на точку безубыточности по данным франчайзи" data-number="2"></button>
             <div class="number-entre block-tandyr__entre">
               <div class="number-entre__content">
                 <p class="number-entre__text">Предпринимателя из России,  Европы и СНГ присоединились к франшизе</p><span class="number-entre__number">94</span>
@@ -276,7 +276,23 @@
                     <p class="range__meanings"><span>мин.</span><span>макс.</span></p>
                   </div>
                 </div>
-                <div class="tab-pane fade show active" id="tab-2" role="tabpanel"></div>
+                <div class="tab-pane fade show" id="tab-2" role="tabpanel">
+                  <div class="range">
+                    <p class="range__limit">Затраты на открытие: <strong class="range__rub">235</strong></p>
+                    <input type="range" min="10" max="1000" step="10" value="300" data-rangeslider role="input-range">
+                    <p class="range__meanings"><span>мин.</span><span>макс.</span></p>
+                  </div>
+                  <div class="range">
+                    <p class="range__limit">Длительность работы пекарни: <strong>2 <span>месяца</span></strong></p>
+                    <input type="range" min="20" max="221000" step="10" value="300" data-rangeslider role="input-range">
+                    <p class="range__meanings"><span>Открытие</span><span>1 год</span></p>
+                  </div>
+                  <div class="range">
+                    <p class="range__limit">Стоимость аренды помещения: <strong class="range__rub">235</strong></p>
+                    <input type="range" min="1" max="100230" step="10" value="300" data-rangeslider role="input-range">
+                    <p class="range__meanings"><span>мин.</span><span>макс.</span></p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="calculator__result">
@@ -307,10 +323,28 @@
               <div class="block-info opening__block-info"><em class="block-info__ident">* Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи</em><em>** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.</em></div>
             </section>
             <div class="col-xl-6">
-              <section class="pack-franchise">
+              <section class="pack-franchise pack-franchise--active">
                 <h3 class="pack-franchise__title">Пакет франшизы</h3>
                 <ul class="pack-franchise__list">
                   <li class="pack-franchise__item">Электрический глиняный тандыр, габариты: 120х100 см</li>
+                  <li class="pack-franchise__item">Чекиш, мягкий пресс, крюк, лопатка</li>
+                  <li class="pack-franchise__item">Доступ к корпоративной LMS-системе</li>
+                  <li class="pack-franchise__item">Доступ к общему чату всех франчайзи</li>
+                  <li class="pack-franchise__item">Настроенная система Poster</li>
+                  <li class="pack-franchise__item">Технологические карты</li>
+                  <li class="pack-franchise__item">Описание технологии приготовления пррдукции</li>
+                  <li class="pack-franchise__item">Стандарты технологического процесса (бейкер бук),</li>
+                  <li class="pack-franchise__item">Система ХАССП (HACCP)</li>
+                  <li class="pack-franchise__item">Маркетинг и реклама:<small>бренд-бук, гайд-лайн, план-график маркетинговой активности  на год, smm-гид)</small></li>
+                  <li class="pack-franchise__item">Помощь в подборе помещения</li>
+                  <li class="pack-franchise__item">Персонал - подбор, обучение, мотивация, документация<small>(должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )</small></li>
+                  <li class="pack-franchise__item">Бизнес-бук – стандарты организации и управления пекарней.</li>
+                </ul>
+              </section>
+              <section class="pack-franchise">
+                <h3 class="pack-franchise__title">Пакет «Лайт-формат»</h3>
+                <ul class="pack-franchise__list">
+                  <li class="pack-franchise__item">Электрический глиняный тандыр, габариты: 80х100 см</li>
                   <li class="pack-franchise__item">Чекиш, мягкий пресс, крюк, лопатка</li>
                   <li class="pack-franchise__item">Доступ к корпоративной LMS-системе</li>
                   <li class="pack-franchise__item">Доступ к общему чату всех франчайзи</li>

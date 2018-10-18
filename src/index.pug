@@ -144,10 +144,10 @@ block content
           li.result__item.result__item--block-3
             p Лауреаты профессиональной премии Golden Brand, действующие члены Российской Ассоциации Франчайзинга, работаем по стандартам качества ISO.
         .tynder-content
-          button.tynder-content__dot.tynder-content__dot-1.tynder-content__dot--active(aria-label="Точки для появления текста Тандера")
-          button.tynder-content__dot.tynder-content__dot-2(aria-label="Точки для появления текста Тандера")
-          button.tynder-content__dot.tynder-content__dot-3(aria-label="Точки для появления текста Тандера")
-          button.tynder-content__dot.tynder-content__dot-4(aria-label="Точки для появления текста Тандера")
+          button.tynder-content__dot.tynder-content__dot-1.tynder-content__dot--active(aria-label="Точки для появления текста Тандера" data-text="Предпринимателя из России, Европы и СНГ присоединились к франшизе" data-number="94")
+          button.tynder-content__dot.tynder-content__dot-2(aria-label="Точки для появления текста Тандера" data-text="Среднее время открытия  одной тандырной пекарни" data-number="1")
+          button.tynder-content__dot.tynder-content__dot-3(aria-label="Точки для появления текста Тандера" data-text="Сотрудников в управляющей компании работают на запуск и обслуживание франчайз" data-number="10")
+          button.tynder-content__dot.tynder-content__dot-4(aria-label="Точки для появления текста Тандера" data-text="Средний срок выхода на точку безубыточности по данным франчайзи" data-number="2")
           .number-entre.block-tandyr__entre
             .number-entre__content
               p.number-entre__text Предпринимателя из России,  Европы и СНГ присоединились к франшизе
@@ -259,7 +259,25 @@ block content
                   p.range__meanings
                     span мин.
                     span макс.
-              .tab-pane.fade.show.active(id="tab-2" role="tabpanel")
+              .tab-pane.fade.show(id="tab-2" role="tabpanel")
+                .range
+                  p.range__limit Затраты на открытие: #[strong.range__rub 235]
+                  input(type="range" min="10" max="1000" step="10" value="300" data-rangeslider  role="input-range")
+                  p.range__meanings
+                    span мин.
+                    span макс.
+                .range
+                  p.range__limit Длительность работы пекарни: #[strong 2 #[span месяца]]
+                  input(type="range" min="20" max="221000" step="10" value="300" data-rangeslider  role="input-range")
+                  p.range__meanings
+                    span Открытие
+                    span 1 год
+                .range
+                  p.range__limit Стоимость аренды помещения: #[strong.range__rub 235]
+                  input(type="range" min="1" max="100230" step="10" value="300" data-rangeslider  role="input-range")
+                  p.range__meanings
+                    span мин.
+                    span макс.
           .calculator__result
             .calculator__wrap-total
               p.calculator__total.calculator__total--rub #[span Общая сумма инвестиций:] #[strong 1 187 000]
@@ -289,10 +307,28 @@ block content
               em.block-info__ident * Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи
               em ** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.
           .col-xl-6
-            section.pack-franchise
+            section.pack-franchise.pack-franchise--active
               h3.pack-franchise__title Пакет франшизы
               ul.pack-franchise__list
                 li.pack-franchise__item Электрический глиняный тандыр, габариты: 120х100 см
+                li.pack-franchise__item Чекиш, мягкий пресс, крюк, лопатка
+                li.pack-franchise__item Доступ к корпоративной LMS-системе
+                li.pack-franchise__item Доступ к общему чату всех франчайзи
+                li.pack-franchise__item Настроенная система Poster
+                li.pack-franchise__item Технологические карты
+                li.pack-franchise__item Описание технологии приготовления пррдукции
+                li.pack-franchise__item Стандарты технологического процесса (бейкер бук),
+                li.pack-franchise__item Система ХАССП (HACCP)
+                li.pack-franchise__item Маркетинг и реклама:
+                  small бренд-бук, гайд-лайн, план-график маркетинговой активности  на год, smm-гид)
+                li.pack-franchise__item Помощь в подборе помещения
+                li.pack-franchise__item Персонал - подбор, обучение, мотивация, документация
+                  small (должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )
+                li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
+            section.pack-franchise
+              h3.pack-franchise__title Пакет «Лайт-формат»
+              ul.pack-franchise__list
+                li.pack-franchise__item Электрический глиняный тандыр, габариты: 80х100 см
                 li.pack-franchise__item Чекиш, мягкий пресс, крюк, лопатка
                 li.pack-franchise__item Доступ к корпоративной LMS-системе
                 li.pack-franchise__item Доступ к общему чату всех франчайзи

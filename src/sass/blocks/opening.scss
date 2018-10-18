@@ -13,6 +13,7 @@
   @media(min-width: $screen-xl) {
     padding-top: 75px;
     padding-bottom: 63px;
+
   }
 }
 
@@ -39,6 +40,10 @@
 
 .opening__row {
   position: relative;
+
+  @media(min-width: $screen-xl) {
+    min-height: 610px;
+  }
 }
 
 .opening__block-info {

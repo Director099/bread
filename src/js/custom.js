@@ -124,3 +124,63 @@ $(".navigation__btn").on("click", function() {
   $(".navigation").toggleClass("navigation--active");
   $(".navigation__list").toggleClass("navigation__list--active");
 })
+
+
+$(function() {
+  $('.tynder-content__dot').hover(function() {
+    $('.tynder-content__dot').removeClass('tynder-content__dot--active');
+    $(this).addClass('tynder-content__dot--active');
+    $('.number-entre__text').text($(this).attr('data-text'));
+    $('.number-entre__number').text($(this).attr('data-number'));
+    $('.number-entre__number').removeClass('number-entre__number--mont')
+    $('.number-entre__number').removeClass('number-entre__number--monts')
+  })
+
+  $('.tynder-content__dot-2').hover(function() {
+    $('.tynder-content__dot').removeClass('tynder-content__dot--active');
+    $(this).addClass('tynder-content__dot--active');
+    $('.number-entre__text').text($(this).attr('data-text'));
+    $('.number-entre__number').text($(this).attr('data-number'));
+    $('.number-entre__number').removeClass('number-entre__number--mont')
+    $('.number-entre__number').removeClass('number-entre__number--monts')
+
+    $('.number-entre__number').addClass('number-entre__number--mont')
+
+  })
+
+  $('.tynder-content__dot-4').hover(function() {
+    $('.tynder-content__dot').removeClass('tynder-content__dot--active');
+    $(this).addClass('tynder-content__dot--active');
+    $('.number-entre__text').text($(this).attr('data-text'));
+    $('.number-entre__number').text($(this).attr('data-number'));
+    $('.number-entre__number').removeClass('number-entre__number--mont')
+    $('.number-entre__number').removeClass('number-entre__number--monts')
+
+    $('.number-entre__number').addClass('number-entre__number--monts')
+  })
+});
+
+$(function() {
+  $('.catalog__arrow--prev').on('click', function() {
+    $('.catalog__slider  .owl-prev').click();
+  });
+  $('.catalog__arrow--next').on('click', function() {
+    $('.catalog__slider  .owl-next').click();
+  });
+});
+
+$(function() {
+  $('.document__text a').on('click', function(evt) {
+    evt.preventDefault();
+    if ($('.document__text a').text() === 'Лайт-формат') {
+      $('.document__text a').text("полноценный формат");
+      $('.pack-franchise:first-child').removeClass('pack-franchise--active')
+      $('.pack-franchise:last-child').addClass('pack-franchise--active')
+    } else {
+      $('.document__text a').text("Лайт-формат");
+      $('.pack-franchise:last-child').removeClass('pack-franchise--active')
+      $('.pack-franchise:first-child').addClass('pack-franchise--active')
+    }
+
+  });
+});
