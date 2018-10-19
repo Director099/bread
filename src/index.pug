@@ -4,8 +4,7 @@ block meta
   title Главная
 block header
   .fullpage
-    .container.container--max
-      +page-header()
+    +page-header()
     .container.fullpage__container
       .fullpage__content
         section.main-block.fullpage__main-block
@@ -17,10 +16,34 @@ block header
             li.nominations__item Выбор #[br] народа
             li.nominations__item Золотая франшиза
             li.nominations__item Франчайзер года
-        .next-slider
-          button.next-slider__btn Изготовление
-          .next-slider__bg(style="background-image: url('../img/slider-head/bg-header.jpg')")
-
+    nav.navigation
+      ul.navigation__list
+        li.navigation__item
+          a.navigation__link.navigation__link--active(href="#") Главная
+        li.navigation__item
+          a.navigation__link(href="#about-us") О франшизе
+        li.navigation__item
+          a.navigation__link(href="#gallary") Фотогалерея
+        li.navigation__item
+          a.navigation__link(href="#advant") Преимущества
+        li.navigation__item
+          a.navigation__link(href="#product") Продукция
+        li.navigation__item
+          a.navigation__link(href="#equipment") Оборудование
+        li.navigation__item
+          a.navigation__link(href="#calculator") Калькулятор
+        li.navigation__item
+          a.navigation__link(href="#argument") Доказательства
+      form.form-callback
+        h3.form-callback__title Специалист свяжется с вамив течении 30 минут
+        input.form-input.form-input--phone.form-callback__ident(type="tel" placeholder="+1 234 567 890")
+        button.form-callback_btn.form-callback__ident Заказать звонок
+        .form-checkbox
+          input.form-checkbox__input(type="checkbox" id="check-2" checked)
+          label.form-checkbox__text.form-checkbox__text--color(for="check-2") Заполняя форму, Вы соглашаетесь с политикой конфиденциальности
+    .next-slider
+        button.next-slider__btn Изготовление
+        .next-slider__bg(style="background-image: url('../img/slider-head/bg-header.jpg')")
     .fullpage__slider.owl-carousel.owl-theme
       .item(style="background-image: url('../img/slider-head/bg-peack.jpg')" data-text="Изготовление")
       .item(style="background-image: url('../img/slider-head/bg-vitrina.jpg')" data-text="Лайт-формат")
@@ -29,7 +52,7 @@ block header
       .item(style="background-image: url('../img/slider-head/bg-cooking.jpg')" data-text="Процесс")
 block content
   main
-    .bg-content.about-us
+    .bg-content.about-us(id="about-us")
       .container
         h2.title «Хлеб из тандыра»
         p.tagline Первая франшиза тандырной пекарни в России и мире
@@ -60,7 +83,7 @@ block content
             .income__price.income__price--color-2
               strong.income__numb 495 000 #[sub руб]
               p Стоимость стартового пакета  (уже включена в сумму общих инвестиции)
-        h2.title.title--center.about-us__title Фотогалерея франшизы
+        h2.title.title--center.about-us__title(id="gallary") Фотогалерея франшизы
         .gallery.desc.owl-carousel.owl-theme
           .item
             a.gallery__img(
@@ -131,7 +154,7 @@ block content
               href="https://youtu.be/wKnB0YliaA0",
               data-fancybox="images"
               )
-    .bg-content.block-tandyr
+    .bg-content.block-tandyr(id="advant")
       section.container
         h2.title.title--color.block-tandyr__title В основе франшизы личный 20-ти летний  опыт в бизнесе
         ul.result.block-tandyr__result
@@ -150,6 +173,7 @@ block content
           button.tynder-content__dot.tynder-content__dot-4(aria-label="Точки для появления текста Тандера" data-text="Средний срок выхода на точку безубыточности по данным франчайзи" data-number="2")
           .number-entre.block-tandyr__entre
             .number-entre__content
+              button.number-entre__close(aria-label="Закрыть окно")
               p.number-entre__text Предпринимателя из России,  Европы и СНГ присоединились к франшизе
               span.number-entre__number 94
           .tynder-content__info
@@ -158,7 +182,7 @@ block content
               strong.block-cheaf__name Виктория Богданова
               p Выпускник и резидент Сколково, ученица кулинарной школы Ле Кордон Блю в Париже и Лондоне
             +btn()
-    .bg-content.product
+    .bg-content.product(id="product")
       .container
         h2.title.product__title Более 80 видов выпечки
         p.tagline.product__tagline без консервантов, усилителей вкуса и разрыхлителей
@@ -188,7 +212,7 @@ block content
             li.catalog__item Песочная выпечка
             li.catalog__item Безглютеновый кекс
             li.catalog__item Хлебобулочные изделия
-    .bg-content.block-equipment
+    .bg-content.block-equipment(id="equipment")
       .container
         h2.title.title--color.block-equipment__title В пакете франшизы «хлеб из тандыра» запатентованное оборудование собственного производства
         .row.block-equipment__row
@@ -227,7 +251,7 @@ block content
                   strong Электрический глиняный тандыр
                   p габариты: 120х100 см
               +btn('production__btn')
-    .bg-content.bg-calculator
+    .bg-content.bg-calculator(id="calculator")
       .container
         h2.title.title--center.bg-calculator__title Калькулятор экономических показателей
         .calculator
@@ -350,7 +374,7 @@ block content
             .document
               p.document__text Смотреть #[a(href="#") Лайт-формат]
               small (для помещений без посадочных мест)
-    .bg-content.bg-content--pattern
+    .bg-content.bg-content--pattern(id="argument")
       .container
         h2.title Еще сомневаетесь?
         p.tagline.tagline--size-md Работаем открыто — получите доступ к нашему чату, ключевым показателям, пообщайтесь с действующими франчайзи, посмотрите видео с мест открытия

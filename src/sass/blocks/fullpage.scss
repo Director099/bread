@@ -4,22 +4,9 @@
 }
 
 .fullpage {
+  position: relative;
   overflow: hidden;
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   right: -100%;
-  //   top: 0;
-  //   background: red;
-  //   width: 100%;
-  //   height: 100vh;
-  //   z-index: 1;
-  // }
 }
-
-// .fullpage__page-header {
-//   margin-bottom: 145px;
-// }
 
 .fullpage__main-block {
   margin-bottom: 64px;

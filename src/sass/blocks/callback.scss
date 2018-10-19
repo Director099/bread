@@ -1,6 +1,12 @@
 .callback {
   position: relative;
   text-align: right;
+  transition: $time;
+
+  &--none {
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
 .callback__btn {

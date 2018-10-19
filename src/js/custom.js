@@ -1,10 +1,10 @@
 'use strict';
 
-// $(function () {
-//     $.scrollUp({
-//         scrollText: '',
-//     });
-// });
+$(function () {
+    $.scrollUp({
+        scrollText: '',
+    });
+});
 
 if ($('input[type="tel"]')) {
   $('input[type="tel"]').mask('0 (000) 000 - 00 - 00');
@@ -110,7 +110,7 @@ $('input[type="range"]').rangeslider({
 });
 // Плавный скол с навигации
 
- $(".scrollto > a").click(function () {
+$(".navigation__link").click(function () {
   var elementClick = $(this).attr("href")
   var destination = $(elementClick).offset().top;
   jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
@@ -120,10 +120,51 @@ $('input[type="range"]').rangeslider({
 // Плавный скол с навигации
 
 $(".navigation__btn").on("click", function() {
+  if ($(".form-callback").hasClass("form-callback--active")) {
+    $(".form-callback").removeClass("form-callback--active");
+    $(".navigation__btn").toggleClass("navigation__btn--active");
+    $(".navigation").toggleClass("navigation--active");
+    $(".callback").toggleClass("callback--none");
+    $(".slider-number").toggleClass("slider-number--none");
+    $(".next-slider").toggleClass("next-slider--none");
+
+    $(".page-header__logo").toggleClass("page-header__logo--none")
+    // $(".page-header .mail").toggleClass("mail--none")
+
+  } else {
+    $(".page-header__logo").toggleClass("page-header__logo--none")
+    $(".page-header .mail").toggleClass("mail--none")
+    $(".navigation__btn").toggleClass("navigation__btn--active");
+    $(".navigation").toggleClass("navigation--active");
+
+    $(".callback").toggleClass("callback--none");
+    $(".slider-number").toggleClass("slider-number--none");
+    $(".next-slider").toggleClass("next-slider--none");
+
+    $(".navigation__list").toggleClass("navigation__list--active");
+  }
+})
+
+$(".callback__btn").on("click", function() {
   $(".navigation__btn").toggleClass("navigation__btn--active");
   $(".navigation").toggleClass("navigation--active");
-  $(".navigation__list").toggleClass("navigation__list--active");
+
+  $(".callback").toggleClass("callback--none");
+  $(".slider-number").toggleClass("slider-number--none");
+  $(".next-slider").toggleClass("next-slider--none");
+
+  $(".page-header__logo").toggleClass("page-header__logo--none")
+
+  $(".form-callback").toggleClass("form-callback--active")
 })
+
+$(function() {
+  $(".navigation__link").on("click", function(evt) {
+    evt.preventDefault();
+    $(".navigation__link").removeClass("navigation__link--active");
+    $(evt.target).addClass("navigation__link--active");
+  })
+});
 
 
 $(function() {
@@ -134,6 +175,9 @@ $(function() {
     $('.number-entre__number').text($(this).attr('data-number'));
     $('.number-entre__number').removeClass('number-entre__number--mont')
     $('.number-entre__number').removeClass('number-entre__number--monts')
+     $(".number-entre__content").removeClass("number-entre__content--none")
+    $('.number-entre').removeClass('number-entre--none')
+
   })
 
   $('.tynder-content__dot-2').hover(function() {
@@ -143,8 +187,11 @@ $(function() {
     $('.number-entre__number').text($(this).attr('data-number'));
     $('.number-entre__number').removeClass('number-entre__number--mont')
     $('.number-entre__number').removeClass('number-entre__number--monts')
+     $(".number-entre__content").removeClass("number-entre__content--none")
 
     $('.number-entre__number').addClass('number-entre__number--mont')
+    $('.number-entre').removeClass('number-entre--none')
+
 
   })
 
@@ -155,8 +202,10 @@ $(function() {
     $('.number-entre__number').text($(this).attr('data-number'));
     $('.number-entre__number').removeClass('number-entre__number--mont')
     $('.number-entre__number').removeClass('number-entre__number--monts')
+     $(".number-entre__content").removeClass("number-entre__content--none")
 
     $('.number-entre__number').addClass('number-entre__number--monts')
+    $('.number-entre').removeClass('number-entre--none')
   })
 });
 
@@ -184,3 +233,8 @@ $(function() {
 
   });
 });
+
+$(".number-entre__close").on("click", function() {
+  $(".number-entre__content").addClass("number-entre__content--none")
+  $('.number-entre').addClass('number-entre--none')
+})

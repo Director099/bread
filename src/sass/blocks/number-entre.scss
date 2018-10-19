@@ -32,6 +32,10 @@
     height: 367px;
     margin-bottom: 50px;
   }
+
+  &--none {
+    z-index: -1;
+  }
 }
 
 .number-entre__content {
@@ -40,6 +44,24 @@
   border-radius: 5px;
   background: url("../img/block-dot.png") no-repeat top / cover;
   overflow: hidden;
+
+  &--none {
+    display: none;
+  }
+}
+
+.number-entre__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: url("../img/sprite/close-black.svg") no-repeat center / contain;
+
+  @media(min-width: $screen-xl) {
+    display: none;
+  }
 }
 
 .number-entre__text {

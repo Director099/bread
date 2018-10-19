@@ -15,6 +15,12 @@
     color: $white;
     font-size: 12px;
     font-weight: 300;
+    transition: $time;
+  }
+
+  &--none {
+    pointer-events: none;
+    opacity: 0;
   }
 }
 

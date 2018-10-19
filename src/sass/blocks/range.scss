@@ -95,9 +95,16 @@
 .range__rub::after {
   content: "";
   position: absolute;
-  top: 5px;
-  right: -25px;
+  top: 3px;
+  right: -23px;
   width: 20px;
-  height: 15px;
+  height: 11px;
   background: url("../img/sprite/ruble-black.svg") no-repeat;
+
+  @media(min-width: $screen-md) {
+    top: 5px;
+    right: -25px;
+    width: 20px;
+    height: 15px;
+  }
 }

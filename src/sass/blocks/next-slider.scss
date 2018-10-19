@@ -5,9 +5,16 @@
     display: block;
     position: absolute;
     bottom: 0;
-    right: -97px;
+    right: 15px;
     display: flex;
     align-items: flex-end;
+    z-index: 3;
+    transition: $time;
+  }
+
+  &--none {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
