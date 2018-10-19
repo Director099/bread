@@ -8,13 +8,10 @@
   transition: $time;
   background: url("../img/blur/blur-menu.png") no-repeat top / cover;
 
-  // @media(min-width: $screen-md) {
-  //   right: -100%;
-  // }
 
-  // @media(min-width: $screen-xl) {
-  //   right: 0px;
-  // }
+  @media(min-width: $screen-xl) {
+    right: 0px;
+  }
 
   &--active {
     width: 268px;

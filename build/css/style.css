@@ -10080,6 +10080,8 @@ main {
     transition: 0.3s; }
   .container.container--max{
     max-width: 100%; }
+  .navigation{
+    right: 0px; }
   .navigation__btn{
     right: 15px;
     top: 11px; }
