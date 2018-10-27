@@ -5930,7 +5930,10 @@ main {
   width: 100%;
   max-width: 100%;
   height: 412px;
-  background: url("../img/img-video.jpg") no-repeat center/cover;
+  background-image: url("../img/img-video.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   cursor: pointer; }
 
 .video-img__wrap {
@@ -6361,14 +6364,11 @@ main {
   margin-bottom: 10px; }
 
 .pack-franchise {
-  display: none;
   position: relative;
   padding: 23px 10px 15px 14px;
   background: url("../img/blur/blur-franchize.png") no-repeat center/cover;
   color: white;
   border-radius: 10px; }
-  .pack-franchise--active {
-    display: block; }
 
 .pack-franchise__title {
   text-align: center;
@@ -6411,6 +6411,11 @@ main {
 
 .opening__row {
   position: relative; }
+
+.opening__tab {
+  display: none; }
+  .opening__tab--active {
+    display: flex; }
 
 .opening__block-info {
   margin-bottom: 28px; }
@@ -6519,6 +6524,10 @@ main {
   max-width: 185px;
   margin: 0 auto; }
 
+.social__list {
+  display: flex;
+  flex-wrap: wrap; }
+
 .social__text {
   color: #fdf9ec;
   margin-bottom: 13px;
@@ -6527,7 +6536,7 @@ main {
 .social__item {
   display: inline-block;
   margin-right: 16px; }
-  .social__item::last-child {
+  .social__item:last-child {
     margin-right: 0; }
 
 .developer {
@@ -6557,7 +6566,9 @@ main {
 
 .main-block {
   max-width: 470px;
-  color: white; }
+  color: white;
+  margin-left: auto;
+  margin-right: auto; }
 
 .main-block__text {
   color: #e5d8cf;
@@ -6637,21 +6648,22 @@ main {
     font-size: 12px;
     line-height: 12px; }
 
-.communion__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  display: none; }
+.communion .tab-content {
+  padding-top: 60px;
+  position: relative; }
+
+.communion .col-xl-5,
+.communion .col-xl-7 {
+  position: static; }
 
 .communion__mob {
   margin-bottom: 27px; }
 
-.communion__content {
-  margin-top: 82px;
-  margin-left: 98px; }
-
 .communion__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   font-size: 16px;
   line-height: 25px;
@@ -6664,10 +6676,15 @@ main {
   color: #333333;
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px; }
+  line-height: 18px;
+  margin-bottom: 25px; }
 
 .communion__number {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: none; }
+
+.communion__slider {
+  margin-bottom: 15px; }
 
 .communion__slider .owl-nav {
   margin: 0; }
@@ -7325,11 +7342,11 @@ main {
   .block-cheaf::after {
     content: "";
     position: absolute;
-    left: -10px;
-    top: 12px;
-    width: 125px;
-    height: 100px;
-    background: url("../img/sprite/logo-tech.svg") no-repeat; }
+    left: 0;
+    top: 33px;
+    width: 90px;
+    height: 60px;
+    background: url("../img/sprite/logo-tech.svg") no-repeat center/contain; }
 
 .block-cheaf__clar {
   display: block;
@@ -8659,6 +8676,8 @@ main {
     text-transform: uppercase;
     color: white;
     border-bottom: 1px dashed #ac987e; }
+  .main-block{
+    margin-left: -0px; }
   .main-block__text{
     margin-top: 19px;
     font: 300 16px/29px "Geometria", "Arial", sans-serif; }
@@ -8690,6 +8709,8 @@ main {
     font-size: 21px;
     line-height: 21px;
     margin-bottom: 13px; }
+  .communion .tab-content{
+    padding-top: 100px; }
   .communion__mob{
     margin-bottom: 45px; }
   .communion__title{
@@ -8923,8 +8944,8 @@ main {
     max-width: 100%; }
   .block-cheaf::after{
     top: -142px;
-    left: -20px;
-    width: 200px;
+    left: 0;
+    width: 150px;
     height: 140px; }
   .block-cheaf{
     position: absolute;
@@ -9920,7 +9941,7 @@ main {
   .group-info{
     position: absolute;
     bottom: 22px;
-    left: 23px;
+    left: 13px;
     max-width: 540px;
     flex-direction: row;
     margin-top: 0; }
@@ -9964,19 +9985,25 @@ main {
     line-height: 18px; }
   .communion{
     margin-bottom: 25px; }
-  .communion__row{
-    display: flex; }
+  .communion .tab-content{
+    padding-top: 0; }
   .communion__mob{
     display: none; }
+  .communion__content{
+    margin-left: 98px; }
   .communion__title{
+    position: static;
     text-align: left;
     margin-bottom: 24px; }
   .communion__text{
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 0; }
   .communion__number{
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    display: block; }
   .communion__slider{
-    padding: 0 60px; }
+    padding: 0 60px;
+    margin-bottom: 0; }
   .number-step{
     text-align: left;
     font-size: 48px;

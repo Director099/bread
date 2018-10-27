@@ -4,13 +4,22 @@
   }
 }
 
-.communion__row {
-  @include make-row();
-  display: none;
+.communion .tab-content {
+  padding-top: 60px;
+  position: relative;
+
+  @media(min-width: $screen-md) {
+    padding-top: 100px;
+  }
 
   @media(min-width: $screen-xl) {
-    display: flex;
+    padding-top: 0;
   }
+}
+
+.communion .col-xl-5,
+.communion .col-xl-7 {
+  position: static;
 }
 
 .communion__mob {
@@ -25,11 +34,19 @@
   }
 }
 .communion__content {
-  margin-top: 82px;
-  margin-left: 98px;
+
+  @media(min-width: $screen-xl) {
+    // margin-top: 82px;
+    margin-left: 98px;
+  }
+
 }
 
 .communion__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   font-size: 16px;
   line-height: 25px;
@@ -38,6 +55,7 @@
   color: #333333;
 
   @media(min-width: $screen-md) {
+
     max-width: 430px;
     margin: 0 auto 34px;
     font-size: 27px;
@@ -45,6 +63,7 @@
   }
 
   @media(min-width: $screen-xl) {
+    position: static;
     text-align: left;
     margin-bottom: 24px;
   }
@@ -56,28 +75,35 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  margin-bottom: 25px;
 
   @media(min-width: $screen-md) {
     font-size: 16px;
     line-height: 27px;
+
   }
 
-   @media(min-width: $screen-xl) {
+  @media(min-width: $screen-xl) {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
 .communion__number {
   margin-bottom: 10px;
+  display: none;
 
   @media(min-width: $screen-xl) {
     margin-bottom: 25px;
+    display: block;
   }
 }
 
 .communion__slider {
+  margin-bottom: 15px;
   @media(min-width: $screen-xl) {
     padding: 0 60px;
+    margin-bottom: 0;
   }
 }
 

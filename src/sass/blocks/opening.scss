@@ -46,6 +46,14 @@
   }
 }
 
+.opening__tab {
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}
+
 .opening__block-info {
   margin-bottom: 28px;
 

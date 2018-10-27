@@ -1,6 +1,12 @@
 .main-block {
   max-width: 470px;
   color: $white;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media(min-width: $screen-md) {
+    margin-left: -0px;
+  }
 }
 
 .main-block__text {

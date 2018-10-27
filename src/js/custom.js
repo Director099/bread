@@ -223,12 +223,12 @@ $(function() {
     evt.preventDefault();
     if ($('.document__text a').text() === 'Лайт-формат') {
       $('.document__text a').text("полноценный формат");
-      $('.pack-franchise:first-child').removeClass('pack-franchise--active')
-      $('.pack-franchise:last-child').addClass('pack-franchise--active')
+      $('.opening__tab:first-child').removeClass('opening__tab--active')
+      $('.opening__tab:nth-child(2)').addClass('opening__tab--active')
     } else {
       $('.document__text a').text("Лайт-формат");
-      $('.pack-franchise:last-child').removeClass('pack-franchise--active')
-      $('.pack-franchise:first-child').addClass('pack-franchise--active')
+      $('.opening__tab:nth-child(2)').removeClass('opening__tab--active')
+      $('.opening__tab:first-child').addClass('opening__tab--active')
     }
 
   });

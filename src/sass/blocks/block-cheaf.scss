@@ -7,16 +7,16 @@
   &::after {
     content: "";
     position: absolute;
-    left: -10px;
-    top: 12px;
-    width: 125px;
-    height: 100px;
-    background: url("../img/sprite/logo-tech.svg") no-repeat;
+    left: 0;
+    top: 33px;
+    width: 90px;
+    height: 60px;
+    background: url("../img/sprite/logo-tech.svg") no-repeat center /contain;
 
     @media(min-width: $screen-md) {
       top: -142px;
-      left: -20px;
-      width: 200px;
+      left: 0;
+      width: 150px;
       height: 140px;
     }
 

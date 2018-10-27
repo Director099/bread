@@ -3,7 +3,10 @@
   width: 100%;
   max-width: 100%;
   height: 412px;
-  background: url("../img/img-video.jpg") no-repeat center / cover;
+  background-image: url("../img/img-video.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
 
   @media (min-width: $screen-md) {

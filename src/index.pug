@@ -314,59 +314,77 @@ block content
             +btn('calculator__btn')
     .bg-content.opening
       .container
-        .row.opening__row
-          section.col-xl-6
-            h2.title.title--color.opening__title Стоимость открытия полноценной пекарни
-            ul.price
-              li.price__item
-                strong.price__invest.price__invest--size Стоимость пакета:
-                span.price__cost.price__cost--color 495 000
-              li.price__item
-                strong.price__invest * Расходы на открытие:
-                span.price__cost 700 000
-              li.price__item
-                strong.price__invest ** Общие инвестиции:
-                span.price__cost 1 200 000
-            .block-info.opening__block-info
-              em.block-info__ident * Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи
-              em ** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.
-          .col-xl-6
-            section.pack-franchise.pack-franchise--active
-              h3.pack-franchise__title Пакет франшизы
-              ul.pack-franchise__list
-                li.pack-franchise__item Электрический глиняный тандыр, габариты: 120х100 см
-                li.pack-franchise__item Чекиш, мягкий пресс, крюк, лопатка
-                li.pack-franchise__item Доступ к корпоративной LMS-системе
-                li.pack-franchise__item Доступ к общему чату всех франчайзи
-                li.pack-franchise__item Настроенная система Poster
-                li.pack-franchise__item Технологические карты
-                li.pack-franchise__item Описание технологии приготовления пррдукции
-                li.pack-franchise__item Стандарты технологического процесса (бейкер бук),
-                li.pack-franchise__item Система ХАССП (HACCP)
-                li.pack-franchise__item Маркетинг и реклама:
-                  small бренд-бук, гайд-лайн, план-график маркетинговой активности  на год, smm-гид)
-                li.pack-franchise__item Помощь в подборе помещения
-                li.pack-franchise__item Персонал - подбор, обучение, мотивация, документация
-                  small (должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )
-                li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
-            section.pack-franchise
-              h3.pack-franchise__title Пакет «Лайт-формат»
-              ul.pack-franchise__list
-                li.pack-franchise__item Электрический глиняный тандыр, габариты: 80х100 см
-                li.pack-franchise__item Чекиш, мягкий пресс, крюк, лопатка
-                li.pack-franchise__item Доступ к корпоративной LMS-системе
-                li.pack-franchise__item Доступ к общему чату всех франчайзи
-                li.pack-franchise__item Настроенная система Poster
-                li.pack-franchise__item Технологические карты
-                li.pack-franchise__item Описание технологии приготовления пррдукции
-                li.pack-franchise__item Стандарты технологического процесса (бейкер бук),
-                li.pack-franchise__item Система ХАССП (HACCP)
-                li.pack-franchise__item Маркетинг и реклама:
-                  small бренд-бук, гайд-лайн, план-график маркетинговой активности  на год, smm-гид)
-                li.pack-franchise__item Помощь в подборе помещения
-                li.pack-franchise__item Персонал - подбор, обучение, мотивация, документация
-                  small (должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )
-                li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
+        .opening__row
+          .row.opening__tab.opening__tab--active
+            section.col-xl-6
+              h2.title.title--color.opening__title Стоимость открытия полноценной пекарни
+              ul.price
+                li.price__item
+                  strong.price__invest.price__invest--size Стоимость пакета:
+                  span.price__cost.price__cost--color 495 000
+                li.price__item
+                  strong.price__invest * Расходы на открытие:
+                  span.price__cost 700 000
+                li.price__item
+                  strong.price__invest ** Общие инвестиции:
+                  span.price__cost 1 200 000
+              .block-info.opening__block-info
+                em.block-info__ident * Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи
+                em ** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.
+            .col-xl-6
+              section.pack-franchise
+                h3.pack-franchise__title Пакет франшизы
+                ul.pack-franchise__list
+                  li.pack-franchise__item Электрический глиняный тандыр, габариты: 120х100 см
+                  li.pack-franchise__item Чекиш, мягкий пресс, крюк, лопатка
+                  li.pack-franchise__item Доступ к корпоративной LMS-системе
+                  li.pack-franchise__item Доступ к общему чату всех франчайзи
+                  li.pack-franchise__item Настроенная система Poster
+                  li.pack-franchise__item Технологические карты
+                  li.pack-franchise__item Описание технологии приготовления пррдукции
+                  li.pack-franchise__item Стандарты технологического процесса (бейкер бук),
+                  li.pack-franchise__item Система ХАССП (HACCP)
+                  li.pack-franchise__item Маркетинг и реклама:
+                    small бренд-бук, гайд-лайн, план-график маркетинговой активности  на год, smm-гид)
+                  li.pack-franchise__item Помощь в подборе помещения
+                  li.pack-franchise__item Персонал - подбор, обучение, мотивация, документация
+                    small (должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )
+                  li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
+          .row.opening__tab
+            section.col-xl-6
+              h2.title.title--color.opening__title Стоимость открытия полноценной пекарни
+              ul.price
+                li.price__item
+                  strong.price__invest.price__invest--size Стоимость пакета:
+                  span.price__cost.price__cost--color 495 000
+                li.price__item
+                  strong.price__invest * Расходы на открытие:
+                  span.price__cost 700 000
+                li.price__item
+                  strong.price__invest ** Общие инвестиции:
+                  span.price__cost 1 200 000
+              .block-info.opening__block-info
+                em.block-info__ident * Средняя сумма на основании реальной статистики. Точные расходы на открытие зависят от пожеланий франчайзи
+                em ** Общие инвестиции покрывают все необходимые расходы: пакет франшизы, аренда, ремонт, необходимое оборудование и т.д.
+            .col-xl-6
+              section.pack-franchise
+                h3.pack-franchise__title Пакет «Лайт-формат»
+                ul.pack-franchise__list
+                  li.pack-franchise__item Электрический глиняный тандыр, габариты: 120х100 см
+                  li.pack-franchise__item Чекиш, мягкий пресс, крюк, лопатка
+                  li.pack-franchise__item Доступ к корпоративной LMS-системе
+                  li.pack-franchise__item Доступ к общему чату всех франчайзи
+                  li.pack-franchise__item Настроенная система Poster
+                  li.pack-franchise__item Технологические карты
+                  li.pack-franchise__item Описание технологии приготовления пррдукции
+                  li.pack-franchise__item Стандарты технологического процесса (бейкер бук),
+                  li.pack-franchise__item Система ХАССП (HACCP)
+                  li.pack-franchise__item Маркетинг и реклама:
+                    small бренд-бук, гайд-лайн, план-график маркетинговой активности  на год, smm-гид)
+                  li.pack-franchise__item Помощь в подборе помещения
+                  li.pack-franchise__item Персонал - подбор, обучение, мотивация, документация
+                    small (должностные инструкции и кадровая документация, трудовые договора, инструкции по технике безопасности, трудовая дисциплина )
+                  li.pack-franchise__item Бизнес-бук – стандарты организации и управления пекарней.
           .group-info
             +btn(
               "btn--width "
