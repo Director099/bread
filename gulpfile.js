@@ -18,7 +18,7 @@ var run = require('run-sequence'); //запуск плагинов очеред�
 var del = require('del'); //удаление ненужных файлов
 var concat = require('gulp-concat'); // Конкатинация
 var uglify = require('gulp-uglify'); // минификация js
-var fileinclude = require('gulp-file-include'); //include html
+var atImport = require("postcss-import");
 var pug = require('gulp-pug');
 
 gulp.task('clean', function() {
@@ -61,7 +61,8 @@ gulp.task('style', function() {
       ]}),
       mqpacker ({
         sort: true
-      })
+      }),
+      atImport()
     ]))
     .pipe(gulp.dest(dirs.build + '/css'))
     .pipe(minify())
